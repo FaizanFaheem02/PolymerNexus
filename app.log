@@ -5295,3 +5295,1907 @@ NameError: name 'jsonify' is not defined
 2025-11-11 16:17:33,868 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/11" 200 None
 2025-11-11 16:17:33,870 - INFO - 127.0.0.1 - - [11/Nov/2025 16:17:33] "POST /query HTTP/1.1" 200 -
 2025-11-11 16:17:36,110 - INFO - 127.0.0.1 - - [11/Nov/2025 16:17:36] "GET /query HTTP/1.1" 200 -
+2026-02-09 17:43:23,740 - INFO - Starting the Flask application...
+2026-02-09 17:44:08,800 - INFO - Starting the Flask application...
+2026-02-09 17:44:47,229 - INFO - Starting the Flask application...
+2026-02-09 17:44:47,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-09 17:44:47,952 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-09 17:44:47,960 - INFO -  * Restarting with stat
+2026-02-09 17:44:48,335 - INFO - Starting the Flask application...
+2026-02-09 17:44:48,976 - WARNING -  * Debugger is active!
+2026-02-09 17:44:48,985 - INFO -  * Debugger PIN: 383-807-711
+2026-02-09 17:45:08,966 - INFO - 127.0.0.1 - - [09/Feb/2026 17:45:08] "GET / HTTP/1.1" 200 -
+2026-02-09 17:45:09,111 - INFO - 127.0.0.1 - - [09/Feb/2026 17:45:09] "GET /static/styles.css HTTP/1.1" 200 -
+2026-02-09 17:45:14,786 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-09 17:46:03,886 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:04,765 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:04,769 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:05,205 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:05,207 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:05,643 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:05,646 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:06,208 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:06,210 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:06,653 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:06,656 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:07,130 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:07,134 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:07,695 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:07,698 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:08,146 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:08,149 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:08,535 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:08,538 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:09,014 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:09,017 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:09,428 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:09,431 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:09,801 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:09,804 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:10,296 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:10,300 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:10,735 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:10,739 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:11,139 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:11,143 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:11,667 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:11,671 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:12,182 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:12,185 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:12,572 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:12,575 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:13,100 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:13,103 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:13,535 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:13,538 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:13,981 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:13,984 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:14,464 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:14,469 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:14,882 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:14,889 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:15,359 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:15,364 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:15,932 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:15,937 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:16,454 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:16,458 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:16,871 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:16,875 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:17,430 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:17,432 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:17,936 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:17,940 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:18,367 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:18,370 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:18,893 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:18,897 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:19,332 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:19,336 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:19,848 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:19,851 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:20,375 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:20,378 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:20,804 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:20,807 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:21,251 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:21,253 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:21,783 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:21,786 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:22,226 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:22,230 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:22,681 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:22,684 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:23,202 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:23,206 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:23,655 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:23,658 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:24,093 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:24,096 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:24,556 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:24,559 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:24,985 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:24,989 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:25,467 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:25,470 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:25,980 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:25,983 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:26,392 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:26,396 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:26,820 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:26,824 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:27,376 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:27,379 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:27,839 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:27,842 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:28,262 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:28,265 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:28,773 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:28,776 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:29,193 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:29,196 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:29,626 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:29,629 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:30,111 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:30,113 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:30,539 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:30,541 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:31,019 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:31,021 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:31,501 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:31,506 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:31,917 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:31,920 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:32,378 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:32,382 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:32,880 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:32,884 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:33,304 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:33,308 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:33,712 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:33,715 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:34,202 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:34,207 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:34,656 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:34,660 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:35,161 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:35,166 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:35,946 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:35,950 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:36,525 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:36,527 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-09 17:46:37,109 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-09 17:46:37,110 - INFO - 127.0.0.1 - - [09/Feb/2026 17:46:37] "POST /upload HTTP/1.1" 200 -
+2026-02-09 17:47:19,246 - INFO - 127.0.0.1 - - [09/Feb/2026 17:47:19] "GET /query HTTP/1.1" 200 -
+2026-02-10 13:11:55,534 - INFO - Starting the Flask application...
+2026-02-10 13:11:56,176 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 13:11:56,176 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 13:11:56,178 - INFO -  * Restarting with stat
+2026-02-10 13:11:56,523 - INFO - Starting the Flask application...
+2026-02-10 13:11:57,048 - WARNING -  * Debugger is active!
+2026-02-10 13:11:57,053 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 13:31:05,495 - INFO - Starting the Flask application...
+2026-02-10 13:31:05,916 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 13:31:05,930 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 13:31:05,932 - INFO -  * Restarting with stat
+2026-02-10 13:31:06,173 - INFO - Starting the Flask application...
+2026-02-10 13:31:06,549 - WARNING -  * Debugger is active!
+2026-02-10 13:31:06,554 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 13:31:42,732 - INFO - 127.0.0.1 - - [10/Feb/2026 13:31:42] "GET / HTTP/1.1" 200 -
+2026-02-10 13:31:42,878 - INFO - 127.0.0.1 - - [10/Feb/2026 13:31:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 13:31:55,421 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 13:52:16,124 - INFO - Starting the Flask application...
+2026-02-10 13:56:51,092 - INFO - Starting the Flask application...
+2026-02-10 13:56:51,862 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 13:56:51,863 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 13:56:51,864 - INFO -  * Restarting with stat
+2026-02-10 13:56:52,205 - INFO - Starting the Flask application...
+2026-02-10 13:56:52,898 - WARNING -  * Debugger is active!
+2026-02-10 13:56:52,901 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 13:57:06,144 - INFO - 127.0.0.1 - - [10/Feb/2026 13:57:06] "GET / HTTP/1.1" 200 -
+2026-02-10 13:57:06,252 - INFO - 127.0.0.1 - - [10/Feb/2026 13:57:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 13:57:13,228 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 13:57:16,924 - INFO - 127.0.0.1 - - [10/Feb/2026 13:57:16] "POST /upload HTTP/1.1" 200 -
+2026-02-10 14:08:22,358 - INFO - Starting the Flask application...
+2026-02-10 14:08:22,950 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 14:08:22,950 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 14:08:22,951 - INFO -  * Restarting with stat
+2026-02-10 14:08:23,233 - INFO - Starting the Flask application...
+2026-02-10 14:08:23,763 - WARNING -  * Debugger is active!
+2026-02-10 14:08:23,767 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:08:30,003 - INFO - 127.0.0.1 - - [10/Feb/2026 14:08:30] "GET / HTTP/1.1" 200 -
+2026-02-10 14:08:30,142 - INFO - 127.0.0.1 - - [10/Feb/2026 14:08:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 14:08:35,923 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 14:08:40,847 - INFO - 127.0.0.1 - - [10/Feb/2026 14:08:40] "POST /upload HTTP/1.1" 200 -
+2026-02-10 14:13:13,937 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\utils.py', reloading
+2026-02-10 14:13:14,075 - INFO -  * Restarting with stat
+2026-02-10 14:13:14,432 - INFO - Starting the Flask application...
+2026-02-10 14:13:15,193 - WARNING -  * Debugger is active!
+2026-02-10 14:13:15,196 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:22:27,373 - INFO - Starting the Flask application...
+2026-02-10 14:22:27,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 14:22:27,788 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 14:22:27,789 - INFO -  * Restarting with stat
+2026-02-10 14:22:28,053 - INFO - Starting the Flask application...
+2026-02-10 14:22:28,440 - WARNING -  * Debugger is active!
+2026-02-10 14:22:28,445 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:22:35,922 - INFO - 127.0.0.1 - - [10/Feb/2026 14:22:35] "GET / HTTP/1.1" 200 -
+2026-02-10 14:22:36,093 - INFO - 127.0.0.1 - - [10/Feb/2026 14:22:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 14:22:42,413 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 14:22:47,626 - INFO - 127.0.0.1 - - [10/Feb/2026 14:22:47] "POST /upload HTTP/1.1" 200 -
+2026-02-10 14:25:39,053 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\utils.py', reloading
+2026-02-10 14:25:39,150 - INFO -  * Restarting with stat
+2026-02-10 14:25:39,377 - INFO - Starting the Flask application...
+2026-02-10 14:25:39,815 - WARNING -  * Debugger is active!
+2026-02-10 14:25:39,818 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:29:19,595 - INFO - Starting the Flask application...
+2026-02-10 14:29:20,177 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 14:29:20,177 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 14:29:20,179 - INFO -  * Restarting with stat
+2026-02-10 14:29:20,513 - INFO - Starting the Flask application...
+2026-02-10 14:29:20,998 - WARNING -  * Debugger is active!
+2026-02-10 14:29:21,002 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:29:27,686 - INFO - 127.0.0.1 - - [10/Feb/2026 14:29:27] "GET / HTTP/1.1" 200 -
+2026-02-10 14:29:27,838 - INFO - 127.0.0.1 - - [10/Feb/2026 14:29:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 14:29:33,295 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 14:29:38,673 - INFO - 127.0.0.1 - - [10/Feb/2026 14:29:38] "POST /upload HTTP/1.1" 200 -
+2026-02-10 14:42:25,675 - INFO - Starting the Flask application...
+2026-02-10 14:42:26,219 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 14:42:26,219 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 14:42:26,222 - INFO -  * Restarting with stat
+2026-02-10 14:42:26,570 - INFO - Starting the Flask application...
+2026-02-10 14:42:27,063 - WARNING -  * Debugger is active!
+2026-02-10 14:42:27,072 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 14:42:37,017 - INFO - 127.0.0.1 - - [10/Feb/2026 14:42:37] "GET / HTTP/1.1" 200 -
+2026-02-10 14:42:37,175 - INFO - 127.0.0.1 - - [10/Feb/2026 14:42:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-10 14:42:53,606 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-10 14:45:49,932 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:50,441 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:50,445 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:50,933 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:50,936 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:51,407 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:51,409 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:51,868 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:51,871 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:52,345 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:52,349 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:52,796 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:52,799 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:53,231 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:53,235 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:53,693 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:53,700 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:54,157 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:54,164 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:54,604 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:54,608 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:55,093 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:55,095 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:55,547 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:55,551 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:55,968 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:55,971 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:56,410 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:56,413 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:56,926 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:56,929 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:57,370 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:57,374 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:57,799 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:57,802 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:58,240 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:58,244 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:58,673 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:58,676 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:59,082 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:59,085 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:59,515 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:59,518 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:45:59,926 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:45:59,930 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:00,347 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:00,350 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:00,739 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:00,742 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:01,155 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:01,159 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:01,544 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:01,547 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:01,997 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:02,001 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:02,414 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:02,417 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:02,913 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:02,916 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:03,369 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:03,372 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:03,829 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:03,832 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:04,278 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:04,281 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:04,693 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:04,696 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:05,077 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:05,081 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:05,491 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:05,494 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:05,949 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:05,953 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:06,399 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:06,402 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:06,858 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:06,861 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:07,279 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:07,282 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:07,730 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:07,734 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:08,173 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:08,176 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:08,612 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:08,615 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:09,106 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:09,110 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:09,558 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:09,563 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:10,031 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:10,036 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:10,453 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:10,456 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:10,883 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:10,886 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:11,362 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:11,365 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:11,900 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:11,903 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:12,325 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:12,329 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:12,786 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:12,789 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:13,240 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:13,243 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:13,636 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:13,639 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:14,068 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:14,071 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:14,531 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:14,534 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:14,953 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:14,956 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:15,505 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:15,510 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:15,965 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:15,971 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:16,405 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:16,407 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:16,816 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:16,820 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:17,213 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:17,217 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:17,677 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:17,681 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:17,977 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:17,980 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:18,291 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:18,293 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:18,811 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:18,813 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:19,098 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:19,100 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:19,375 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:19,377 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:19,697 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:19,700 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:20,018 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:20,020 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:20,334 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:20,337 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:20,695 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:20,697 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:21,007 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:21,010 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:21,334 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:21,337 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:21,660 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:21,663 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:21,948 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:21,952 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:22,265 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:22,269 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:22,574 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:22,579 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:22,907 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:22,910 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:23,245 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:23,249 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:23,563 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:23,566 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:23,926 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:23,929 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:24,248 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:24,250 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:24,535 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:24,538 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:24,842 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:24,845 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:25,209 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:25,211 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:25,529 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:25,531 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:25,824 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:25,826 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:26,112 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:26,115 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:26,427 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:26,430 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:26,673 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:26,675 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:26,970 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:26,971 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:27,256 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:27,258 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:27,704 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:27,710 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:28,143 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:28,149 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:28,616 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:28,621 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:29,077 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:29,082 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:29,470 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:29,474 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:29,951 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:29,955 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:30,431 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:30,434 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:30,860 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:30,867 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:31,362 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:31,368 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:31,826 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:31,831 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:32,261 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:32,266 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:32,745 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:32,750 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:33,248 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:33,256 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:33,733 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:33,739 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:34,193 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:34,201 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:34,696 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:34,703 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:35,181 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:35,187 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:35,647 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:35,654 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:36,100 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:36,105 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:36,580 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:36,585 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:37,147 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:37,151 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:37,570 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:37,573 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:38,041 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:38,047 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:38,528 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:38,531 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:39,000 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:39,006 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:39,433 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:39,438 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:39,861 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:39,866 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:40,329 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:40,334 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:40,828 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:40,834 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:41,255 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:41,262 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:41,731 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:41,736 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:42,184 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:42,190 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:42,642 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:42,649 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:43,122 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:43,127 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:43,640 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:43,645 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:44,116 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:44,121 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:44,573 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:44,577 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:45,108 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:45,114 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:45,611 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:45,617 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:46,098 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:46,104 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:46,556 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:46,560 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:47,042 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:47,048 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:47,504 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:47,508 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:47,961 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:47,965 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:48,399 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:48,405 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:48,862 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:48,867 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:49,350 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:49,355 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:49,836 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:49,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:50,277 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:50,281 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:50,747 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:50,752 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:51,210 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:51,216 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:51,677 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:51,682 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:52,152 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:52,157 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:52,601 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:52,607 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:53,068 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:53,074 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:53,544 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:53,550 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:54,069 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:54,073 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:54,547 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:54,552 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:55,017 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:55,022 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:55,485 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:55,490 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:55,930 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:55,936 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:56,392 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:56,397 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:56,999 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:57,004 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:57,470 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:57,477 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:57,902 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:57,906 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:58,413 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:58,420 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:58,853 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:58,855 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:59,227 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:59,231 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:46:59,646 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:46:59,650 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:00,059 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:00,063 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:00,454 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:00,459 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:00,912 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:00,918 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:01,388 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:01,395 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:01,827 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:01,833 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:02,296 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:02,303 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:02,784 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:02,789 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:03,311 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:03,316 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:03,761 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:03,767 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:04,224 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:04,227 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:04,611 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:04,615 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:05,080 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:05,083 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:05,518 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:05,522 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:05,945 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:05,949 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:06,407 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:06,411 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:06,818 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:06,821 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:07,279 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:07,282 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:07,728 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:07,731 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:08,192 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:08,195 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:08,634 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:08,637 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:09,124 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:09,127 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:09,646 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:09,652 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:10,113 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:10,119 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:10,585 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:10,590 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:11,093 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:11,099 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:11,579 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:11,585 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:12,058 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:12,064 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:12,515 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:12,522 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:12,998 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:13,003 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:13,406 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:13,410 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:13,836 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:13,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:14,307 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:14,313 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:14,742 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:14,745 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:15,071 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:15,073 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:15,343 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:15,345 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:15,656 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:15,659 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:15,944 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:15,948 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:16,389 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:16,398 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:16,894 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:16,901 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:17,376 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:17,381 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:17,771 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:17,778 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:18,247 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:18,249 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:18,693 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:18,696 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:19,142 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:19,146 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:19,584 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:19,588 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:20,002 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:20,005 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:20,413 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:20,416 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:20,809 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:20,811 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:21,246 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:21,249 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:21,736 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:21,738 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:22,190 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:22,194 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:22,625 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:22,628 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:23,077 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:23,081 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:23,523 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:23,526 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:23,936 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:23,939 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:24,339 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:24,343 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:24,734 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:24,736 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:25,137 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:25,140 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:25,538 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:25,542 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:25,951 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:25,955 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:26,364 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:26,369 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:26,844 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:26,851 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:27,335 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:27,340 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:27,911 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:27,915 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:28,423 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:28,427 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:28,837 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:28,843 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:29,307 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:29,311 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:29,762 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:29,768 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:30,212 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:30,220 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:30,654 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:30,660 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:31,096 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:31,100 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:31,542 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:31,546 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:32,017 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:32,025 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:32,460 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:32,466 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:32,908 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:32,913 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:33,385 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:33,391 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:33,837 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:33,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:34,320 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:34,325 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:34,779 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:34,784 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:35,231 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:35,236 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:35,718 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:35,723 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:36,206 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:36,211 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:36,618 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:36,621 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:37,014 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:37,018 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:37,303 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:37,306 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:37,624 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:37,628 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:38,063 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:38,067 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:38,497 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:38,500 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:38,908 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:38,911 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:39,344 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:39,348 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:39,721 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:39,726 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:40,185 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:40,188 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:40,571 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:40,574 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:40,958 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:40,962 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:41,375 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:41,379 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:41,777 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:41,781 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:42,154 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:42,158 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:42,588 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:42,591 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:42,968 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:42,971 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:43,348 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:43,351 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:43,732 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:43,735 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:44,124 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:44,129 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:44,567 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:44,572 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:45,031 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:45,037 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:45,436 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:45,441 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:45,926 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:45,931 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:46,354 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:46,360 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:46,763 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:46,769 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:47,204 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:47,208 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:47,616 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:47,619 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:48,001 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:48,004 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:48,429 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:48,432 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:48,830 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:48,834 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:49,272 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:49,278 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:49,783 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:49,788 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:50,251 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:50,258 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:50,697 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:50,703 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:51,127 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:51,130 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:51,402 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:51,405 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:51,834 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:51,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:52,320 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:52,325 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:52,805 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:52,811 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:53,229 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:53,232 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:53,654 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:53,656 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:54,090 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:54,092 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:54,536 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:54,539 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:54,821 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:54,823 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:55,096 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:55,098 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:55,372 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:55,374 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:55,682 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:55,685 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:56,061 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:56,064 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:56,510 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:56,514 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:56,911 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:56,913 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:57,389 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:57,392 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:57,785 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:57,788 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:58,168 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:58,171 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:58,559 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:58,562 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:58,933 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:58,936 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:59,340 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:59,343 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:47:59,762 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:47:59,765 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:00,138 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:00,142 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:00,544 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:00,547 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:00,937 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:00,940 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:01,343 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:01,346 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:01,743 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:01,746 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:02,149 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:02,151 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:02,545 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:02,549 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:02,992 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:02,995 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:03,392 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:03,396 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:04,110 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:04,114 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:04,872 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:04,875 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:05,440 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:05,443 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:06,000 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:06,003 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:06,565 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:06,569 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:07,122 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:07,126 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:07,664 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:07,667 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:08,170 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:08,174 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:08,694 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:08,697 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:09,235 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:09,239 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:09,849 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:09,855 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:10,398 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:10,405 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:11,048 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:11,053 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:11,739 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:11,743 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 14:48:12,317 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-10 14:48:12,320 - INFO - 127.0.0.1 - - [10/Feb/2026 14:48:12] "POST /upload HTTP/1.1" 200 -
+2026-02-10 15:04:56,698 - INFO - Starting the Flask application...
+2026-02-10 15:04:57,162 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-10 15:04:57,163 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 15:04:57,164 - INFO -  * Restarting with stat
+2026-02-10 15:04:57,463 - INFO - Starting the Flask application...
+2026-02-10 15:04:57,934 - WARNING -  * Debugger is active!
+2026-02-10 15:04:57,938 - INFO -  * Debugger PIN: 383-807-711
+2026-02-10 15:05:20,365 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:20] "GET /query HTTP/1.1" 200 -
+2026-02-10 15:05:25,035 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 15:05:25,111 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-10 15:05:25,127 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:25] "POST /query HTTP/1.1" 200 -
+2026-02-10 15:05:36,752 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:36] "GET /query HTTP/1.1" 200 -
+2026-02-10 15:05:40,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 15:05:40,874 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-10 15:05:40,877 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:40] "POST /query HTTP/1.1" 200 -
+2026-02-10 15:05:51,810 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:51] "GET /query HTTP/1.1" 200 -
+2026-02-10 15:05:56,025 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-10 15:05:56,056 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-10 15:05:56,058 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:56] "POST /query HTTP/1.1" 200 -
+2026-02-10 15:05:59,017 - INFO - 127.0.0.1 - - [10/Feb/2026 15:05:59] "GET /query HTTP/1.1" 200 -
+2026-02-11 10:51:32,273 - INFO - Starting the Flask application...
+2026-02-11 10:51:32,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 10:51:32,633 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 10:51:32,634 - INFO -  * Restarting with stat
+2026-02-11 10:51:32,848 - INFO - Starting the Flask application...
+2026-02-11 10:51:33,177 - WARNING -  * Debugger is active!
+2026-02-11 10:51:33,180 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 10:51:40,651 - INFO - 127.0.0.1 - - [11/Feb/2026 10:51:40] "GET / HTTP/1.1" 200 -
+2026-02-11 10:51:40,738 - INFO - 127.0.0.1 - - [11/Feb/2026 10:51:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 10:51:47,433 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 10:51:48,009 - INFO - 127.0.0.1 - - [11/Feb/2026 10:51:48] "POST /upload HTTP/1.1" 200 -
+2026-02-11 10:53:19,391 - INFO - Starting the Flask application...
+2026-02-11 10:53:19,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 10:53:19,707 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 10:53:19,708 - INFO -  * Restarting with stat
+2026-02-11 10:53:19,921 - INFO - Starting the Flask application...
+2026-02-11 10:53:20,226 - WARNING -  * Debugger is active!
+2026-02-11 10:53:20,230 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 10:53:21,507 - INFO - 127.0.0.1 - - [11/Feb/2026 10:53:21] "GET / HTTP/1.1" 200 -
+2026-02-11 10:53:21,550 - INFO - 127.0.0.1 - - [11/Feb/2026 10:53:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 10:53:26,321 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 10:54:11,648 - INFO - 127.0.0.1 - - [11/Feb/2026 10:54:11] "POST /upload HTTP/1.1" 200 -
+2026-02-11 11:01:55,383 - INFO - Starting the Flask application...
+2026-02-11 11:01:55,720 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 11:01:55,720 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 11:01:55,721 - INFO -  * Restarting with stat
+2026-02-11 11:01:55,923 - INFO - Starting the Flask application...
+2026-02-11 11:01:56,240 - WARNING -  * Debugger is active!
+2026-02-11 11:01:56,243 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:02:11,080 - INFO - 127.0.0.1 - - [11/Feb/2026 11:02:11] "GET / HTTP/1.1" 200 -
+2026-02-11 11:02:11,164 - INFO - 127.0.0.1 - - [11/Feb/2026 11:02:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 11:02:16,474 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 11:03:31,329 - INFO - 127.0.0.1 - - [11/Feb/2026 11:03:31] "POST /upload HTTP/1.1" 200 -
+2026-02-11 11:14:01,900 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\utils.py', reloading
+2026-02-11 11:14:02,025 - INFO -  * Restarting with stat
+2026-02-11 11:14:02,240 - INFO - Starting the Flask application...
+2026-02-11 11:14:02,567 - WARNING -  * Debugger is active!
+2026-02-11 11:14:02,570 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:19:58,279 - INFO - Starting the Flask application...
+2026-02-11 11:19:58,618 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 11:19:58,618 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 11:19:58,619 - INFO -  * Restarting with stat
+2026-02-11 11:19:58,821 - INFO - Starting the Flask application...
+2026-02-11 11:19:59,122 - WARNING -  * Debugger is active!
+2026-02-11 11:19:59,125 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:20:03,785 - INFO - 127.0.0.1 - - [11/Feb/2026 11:20:03] "GET / HTTP/1.1" 200 -
+2026-02-11 11:20:03,901 - INFO - 127.0.0.1 - - [11/Feb/2026 11:20:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 11:20:08,404 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 11:21:37,420 - INFO - 127.0.0.1 - - [11/Feb/2026 11:21:37] "POST /upload HTTP/1.1" 200 -
+2026-02-11 11:24:28,390 - INFO - Starting the Flask application...
+2026-02-11 11:24:28,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 11:24:28,705 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 11:24:28,706 - INFO -  * Restarting with stat
+2026-02-11 11:24:28,905 - INFO - Starting the Flask application...
+2026-02-11 11:24:29,206 - WARNING -  * Debugger is active!
+2026-02-11 11:24:29,208 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:24:33,472 - INFO - 127.0.0.1 - - [11/Feb/2026 11:24:33] "GET / HTTP/1.1" 200 -
+2026-02-11 11:24:33,563 - INFO - 127.0.0.1 - - [11/Feb/2026 11:24:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 11:24:38,907 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 11:24:42,540 - INFO - 127.0.0.1 - - [11/Feb/2026 11:24:42] "POST /upload HTTP/1.1" 200 -
+2026-02-11 11:34:37,704 - INFO - Starting the Flask application...
+2026-02-11 11:34:38,027 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 11:34:38,027 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 11:34:38,028 - INFO -  * Restarting with stat
+2026-02-11 11:34:38,223 - INFO - Starting the Flask application...
+2026-02-11 11:34:38,537 - WARNING -  * Debugger is active!
+2026-02-11 11:34:38,539 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:34:45,117 - INFO - 127.0.0.1 - - [11/Feb/2026 11:34:45] "GET / HTTP/1.1" 200 -
+2026-02-11 11:34:45,204 - INFO - 127.0.0.1 - - [11/Feb/2026 11:34:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 11:34:49,436 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 11:35:41,195 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:41,509 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:41,513 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:41,890 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:41,892 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:42,200 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:42,203 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:42,457 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:42,459 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:42,773 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:42,775 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:43,026 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:43,028 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:43,280 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:43,282 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:43,563 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:43,564 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:43,816 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:43,819 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:44,100 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:44,102 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:44,377 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:44,379 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:44,623 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:44,626 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:44,909 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:44,911 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:45,167 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:45,169 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:45,394 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:45,396 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:45,576 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:45,578 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:45,773 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:45,775 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:46,011 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:46,013 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:46,209 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:46,211 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:46,459 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:46,460 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:46,715 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:46,716 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:46,982 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:46,985 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:47,855 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:47,857 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:48,356 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:48,358 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:35:48,585 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 11:35:48,586 - INFO - 127.0.0.1 - - [11/Feb/2026 11:35:48] "POST /upload HTTP/1.1" 200 -
+2026-02-11 11:51:33,085 - INFO - Starting the Flask application...
+2026-02-11 11:51:33,452 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 11:51:33,453 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 11:51:33,454 - INFO -  * Restarting with stat
+2026-02-11 11:51:33,657 - INFO - Starting the Flask application...
+2026-02-11 11:51:33,983 - WARNING -  * Debugger is active!
+2026-02-11 11:51:33,987 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 11:51:37,431 - INFO - 127.0.0.1 - - [11/Feb/2026 11:51:37] "GET /query HTTP/1.1" 200 -
+2026-02-11 11:51:42,730 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 11:51:42,763 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-11 11:51:42,769 - INFO - 127.0.0.1 - - [11/Feb/2026 11:51:42] "POST /query HTTP/1.1" 200 -
+2026-02-11 15:26:18,567 - INFO - Starting the Flask application...
+2026-02-11 15:26:19,271 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 15:26:19,271 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 15:26:19,273 - INFO -  * Restarting with stat
+2026-02-11 15:26:19,691 - INFO - Starting the Flask application...
+2026-02-11 15:26:20,216 - WARNING -  * Debugger is active!
+2026-02-11 15:26:20,227 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 15:26:28,291 - INFO - 127.0.0.1 - - [11/Feb/2026 15:26:28] "GET / HTTP/1.1" 200 -
+2026-02-11 15:26:28,444 - INFO - 127.0.0.1 - - [11/Feb/2026 15:26:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 15:26:34,985 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 15:26:38,497 - INFO - 127.0.0.1 - - [11/Feb/2026 15:26:38] "POST /upload HTTP/1.1" 200 -
+2026-02-11 15:29:32,764 - INFO - Starting the Flask application...
+2026-02-11 15:29:33,187 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 15:29:33,188 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 15:29:33,189 - INFO -  * Restarting with stat
+2026-02-11 15:29:33,443 - INFO - Starting the Flask application...
+2026-02-11 15:29:33,851 - WARNING -  * Debugger is active!
+2026-02-11 15:29:33,855 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 15:29:39,917 - INFO - 127.0.0.1 - - [11/Feb/2026 15:29:39] "GET / HTTP/1.1" 200 -
+2026-02-11 15:29:40,080 - INFO - 127.0.0.1 - - [11/Feb/2026 15:29:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 15:29:44,166 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 15:29:50,308 - INFO - 127.0.0.1 - - [11/Feb/2026 15:29:50] "POST /upload HTTP/1.1" 200 -
+2026-02-11 15:32:41,859 - INFO - Starting the Flask application...
+2026-02-11 15:32:42,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 15:32:42,264 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 15:32:42,265 - INFO -  * Restarting with stat
+2026-02-11 15:32:42,494 - INFO - Starting the Flask application...
+2026-02-11 15:32:42,872 - WARNING -  * Debugger is active!
+2026-02-11 15:32:42,876 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 15:32:53,121 - INFO - 127.0.0.1 - - [11/Feb/2026 15:32:53] "GET / HTTP/1.1" 200 -
+2026-02-11 15:32:53,276 - INFO - 127.0.0.1 - - [11/Feb/2026 15:32:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 15:32:57,577 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 15:35:01,558 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:02,143 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:02,150 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:02,637 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:02,643 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:03,142 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:03,149 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:03,674 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:03,680 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:04,174 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:04,182 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:04,644 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:04,649 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:05,151 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:05,158 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:05,637 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:05,643 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:06,105 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:06,111 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:06,580 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:06,587 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:07,061 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:07,067 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:07,510 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:07,515 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:08,147 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:08,152 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:08,553 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:08,556 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:08,837 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:08,841 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:09,273 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:09,279 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:09,718 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:09,723 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:10,138 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:10,144 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:10,631 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:10,635 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:11,059 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:11,062 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:11,497 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:11,500 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:11,847 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:11,849 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:12,127 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:12,129 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:12,403 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:12,405 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:12,740 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:12,743 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:13,012 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:13,014 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:13,279 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:13,281 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:13,724 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:13,727 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:14,375 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:14,379 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:14,811 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:14,815 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:15,287 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:15,290 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:15,710 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:15,717 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:16,155 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:16,160 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:16,684 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:16,689 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:17,160 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:17,165 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:17,618 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:17,623 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:18,189 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:18,195 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:18,633 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:18,638 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:19,120 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:19,125 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:19,674 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:19,681 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:20,120 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:20,126 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:20,586 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:20,590 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:21,116 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:21,121 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:21,565 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:21,574 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:22,094 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:22,101 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:22,605 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:22,610 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:23,016 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:23,021 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:23,471 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:23,475 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:23,933 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:23,941 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:24,375 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:24,380 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:24,832 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:24,838 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:25,345 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:25,349 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:25,829 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:25,835 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:26,249 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:26,253 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:26,758 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:26,763 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:27,205 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:27,209 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:27,668 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:27,674 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:28,157 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:28,163 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:28,587 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:28,592 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:29,013 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:29,018 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:29,573 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:29,578 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:30,026 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:30,033 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:30,469 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:30,474 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:30,956 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:30,963 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:31,408 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:31,414 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:31,834 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:31,836 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:33,381 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:33,385 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:33,748 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:33,752 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:34,315 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:34,318 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:34,924 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:34,928 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 15:35:35,508 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 15:35:35,511 - INFO - 127.0.0.1 - - [11/Feb/2026 15:35:35] "POST /upload HTTP/1.1" 200 -
+2026-02-11 16:30:44,551 - INFO - Starting the Flask application...
+2026-02-11 16:30:45,121 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 16:30:45,121 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 16:30:45,124 - INFO -  * Restarting with stat
+2026-02-11 16:30:45,482 - INFO - Starting the Flask application...
+2026-02-11 16:30:45,989 - WARNING -  * Debugger is active!
+2026-02-11 16:30:45,992 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 16:30:57,042 - INFO - 127.0.0.1 - - [11/Feb/2026 16:30:57] "GET / HTTP/1.1" 200 -
+2026-02-11 16:30:57,215 - INFO - 127.0.0.1 - - [11/Feb/2026 16:30:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 16:31:04,350 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 16:31:11,099 - INFO - 127.0.0.1 - - [11/Feb/2026 16:31:11] "POST /upload HTTP/1.1" 200 -
+2026-02-11 16:34:08,438 - INFO - Starting the Flask application...
+2026-02-11 16:34:08,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 16:34:08,857 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 16:34:08,857 - INFO -  * Restarting with stat
+2026-02-11 16:34:09,135 - INFO - Starting the Flask application...
+2026-02-11 16:34:09,538 - WARNING -  * Debugger is active!
+2026-02-11 16:34:09,544 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 16:34:13,804 - INFO - 127.0.0.1 - - [11/Feb/2026 16:34:13] "GET / HTTP/1.1" 200 -
+2026-02-11 16:34:13,953 - INFO - 127.0.0.1 - - [11/Feb/2026 16:34:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 16:34:18,367 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 16:36:39,652 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:40,205 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:40,210 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:40,636 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:40,639 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:41,096 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:41,100 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:41,553 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:41,555 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:41,995 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:41,999 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:42,451 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:42,454 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:42,899 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:42,902 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:43,368 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:43,371 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:43,828 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:43,830 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:44,247 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:44,251 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:44,652 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:44,656 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:45,047 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:45,049 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:45,299 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:45,301 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:45,596 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:45,600 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:46,029 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:46,032 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:46,444 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:46,447 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:46,853 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:46,856 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:47,306 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:47,310 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:47,715 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:47,718 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:48,128 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:48,131 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:48,546 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:48,549 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:48,939 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:48,942 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:49,349 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:49,352 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:49,753 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:49,756 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:50,158 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:50,161 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:50,580 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:50,584 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:50,978 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:50,982 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:51,391 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:51,395 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:51,811 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:51,815 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:52,208 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:52,211 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:52,643 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:52,646 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:53,028 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:53,031 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:53,420 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:53,423 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:53,807 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:53,810 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:54,201 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:54,205 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:54,712 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:54,715 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:55,097 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:55,100 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:55,473 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:55,476 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:55,883 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:55,886 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:56,234 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:56,238 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:56,595 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:56,599 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:56,998 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:57,001 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:57,378 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:57,380 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:57,787 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:57,790 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:36:59,127 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:36:59,129 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:37:01,757 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:37:01,762 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:37:02,182 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:37:02,187 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:37:02,744 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 16:37:02,747 - INFO - 127.0.0.1 - - [11/Feb/2026 16:37:02] "POST /upload HTTP/1.1" 200 -
+2026-02-11 16:52:02,212 - INFO - 127.0.0.1 - - [11/Feb/2026 16:52:02] "GET /query HTTP/1.1" 200 -
+2026-02-11 16:52:07,146 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:52:07,212 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-11 16:52:07,223 - INFO - 127.0.0.1 - - [11/Feb/2026 16:52:07] "POST /query HTTP/1.1" 200 -
+2026-02-11 16:52:10,591 - INFO - 127.0.0.1 - - [11/Feb/2026 16:52:10] "GET /query HTTP/1.1" 200 -
+2026-02-11 16:52:15,256 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 16:52:15,359 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-11 16:52:15,362 - INFO - 127.0.0.1 - - [11/Feb/2026 16:52:15] "POST /query HTTP/1.1" 200 -
+2026-02-11 17:17:06,151 - INFO - Starting the Flask application...
+2026-02-11 17:17:06,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 17:17:06,708 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 17:17:06,710 - INFO -  * Restarting with stat
+2026-02-11 17:17:07,054 - INFO - Starting the Flask application...
+2026-02-11 17:17:07,568 - WARNING -  * Debugger is active!
+2026-02-11 17:17:07,572 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 17:17:13,817 - INFO - 127.0.0.1 - - [11/Feb/2026 17:17:13] "GET / HTTP/1.1" 200 -
+2026-02-11 17:17:13,962 - INFO - 127.0.0.1 - - [11/Feb/2026 17:17:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 17:17:19,021 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 17:19:17,748 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:18,242 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:18,246 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:18,770 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:18,773 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:19,303 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:19,306 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:19,875 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:19,879 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:20,370 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:20,376 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:20,879 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:20,884 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:21,317 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:21,322 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:21,743 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:21,748 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:22,259 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:22,266 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:22,762 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:22,768 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:23,258 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:23,262 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:23,704 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:23,710 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:24,171 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:24,173 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:24,580 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:24,584 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:25,067 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:25,071 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:25,512 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:25,517 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:25,995 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:26,000 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:26,486 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:26,492 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:26,949 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:26,954 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:27,391 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:27,397 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:27,803 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:27,807 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:28,289 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:28,296 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:29,653 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:29,658 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:30,221 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:30,225 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:19:30,683 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:19:30,685 - INFO - 127.0.0.1 - - [11/Feb/2026 17:19:30] "POST /upload HTTP/1.1" 200 -
+2026-02-11 17:41:03,295 - INFO - Starting the Flask application...
+2026-02-11 17:41:03,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 17:41:03,767 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 17:41:03,768 - INFO -  * Restarting with stat
+2026-02-11 17:41:04,007 - INFO - Starting the Flask application...
+2026-02-11 17:41:04,399 - WARNING -  * Debugger is active!
+2026-02-11 17:41:04,405 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 17:44:01,865 - INFO - Starting the Flask application...
+2026-02-11 17:44:02,477 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 17:44:02,478 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 17:44:02,480 - INFO -  * Restarting with stat
+2026-02-11 17:44:02,881 - INFO - Starting the Flask application...
+2026-02-11 17:44:03,362 - WARNING -  * Debugger is active!
+2026-02-11 17:44:03,365 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 17:44:08,435 - INFO - 127.0.0.1 - - [11/Feb/2026 17:44:08] "GET / HTTP/1.1" 200 -
+2026-02-11 17:44:08,599 - INFO - 127.0.0.1 - - [11/Feb/2026 17:44:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 17:44:13,432 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 17:46:05,592 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:06,293 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:06,297 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:06,803 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:06,806 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:07,294 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:07,298 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:07,819 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:07,822 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:08,319 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:08,324 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:08,850 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:08,853 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:09,363 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:09,366 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:09,856 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:09,862 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:10,424 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:10,429 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:10,937 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:10,940 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:11,426 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:11,433 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:11,971 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:11,976 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:12,506 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:12,512 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:13,006 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:13,012 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:13,545 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:13,551 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:14,036 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:14,041 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:14,502 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:14,507 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:15,061 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:15,065 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:15,599 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:15,604 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:16,170 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:16,177 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:16,700 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:16,705 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:17,231 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:17,238 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:18,740 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:18,746 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:21,283 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:21,287 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 17:46:21,860 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 17:46:21,864 - INFO - 127.0.0.1 - - [11/Feb/2026 17:46:21] "POST /upload HTTP/1.1" 200 -
+2026-02-11 18:49:29,885 - INFO - Starting the Flask application...
+2026-02-11 18:49:30,659 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-11 18:49:30,659 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-11 18:49:30,661 - INFO -  * Restarting with stat
+2026-02-11 18:49:31,055 - INFO - Starting the Flask application...
+2026-02-11 18:49:31,552 - WARNING -  * Debugger is active!
+2026-02-11 18:49:31,556 - INFO -  * Debugger PIN: 383-807-711
+2026-02-11 18:49:36,709 - INFO - 127.0.0.1 - - [11/Feb/2026 18:49:36] "GET / HTTP/1.1" 200 -
+2026-02-11 18:49:36,841 - INFO - 127.0.0.1 - - [11/Feb/2026 18:49:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-11 18:49:41,921 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-11 18:49:50,939 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 18:49:54,281 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-11 18:49:54,283 - INFO - 127.0.0.1 - - [11/Feb/2026 18:49:54] "POST /upload HTTP/1.1" 200 -
+2026-02-11 18:51:22,791 - INFO - 127.0.0.1 - - [11/Feb/2026 18:51:22] "GET /query HTTP/1.1" 200 -
+2026-02-11 18:51:28,103 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 18:51:28,140 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-11 18:51:28,157 - INFO - 127.0.0.1 - - [11/Feb/2026 18:51:28] "POST /query HTTP/1.1" 200 -
+2026-02-11 18:52:41,160 - INFO - 127.0.0.1 - - [11/Feb/2026 18:52:41] "GET /query HTTP/1.1" 200 -
+2026-02-11 18:52:45,480 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-11 18:52:45,511 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-11 18:52:45,518 - INFO - 127.0.0.1 - - [11/Feb/2026 18:52:45] "POST /query HTTP/1.1" 200 -
+2026-02-12 12:13:22,833 - INFO - Starting the Flask application...
+2026-02-12 12:13:27,450 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 12:13:27,450 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 12:13:27,457 - INFO -  * Restarting with stat
+2026-02-12 12:13:27,803 - INFO - Starting the Flask application...
+2026-02-12 12:13:28,144 - WARNING -  * Debugger is active!
+2026-02-12 12:13:28,150 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 12:13:43,531 - INFO - 127.0.0.1 - - [12/Feb/2026 12:13:43] "GET / HTTP/1.1" 200 -
+2026-02-12 12:13:43,716 - INFO - 127.0.0.1 - - [12/Feb/2026 12:13:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 12:13:43,743 - INFO - 127.0.0.1 - - [12/Feb/2026 12:13:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-12 12:13:48,996 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 12:14:00,583 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 12:14:04,635 - INFO - 127.0.0.1 - - [12/Feb/2026 12:14:04] "POST /upload HTTP/1.1" 200 -
+2026-02-12 12:17:06,101 - INFO - Starting the Flask application...
+2026-02-12 12:17:06,599 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 12:17:06,600 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 12:17:06,601 - INFO -  * Restarting with stat
+2026-02-12 12:17:06,927 - INFO - Starting the Flask application...
+2026-02-12 12:17:07,424 - WARNING -  * Debugger is active!
+2026-02-12 12:17:07,428 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 12:17:13,290 - INFO - 127.0.0.1 - - [12/Feb/2026 12:17:13] "GET / HTTP/1.1" 200 -
+2026-02-12 12:17:13,441 - INFO - 127.0.0.1 - - [12/Feb/2026 12:17:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 12:17:19,251 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 12:17:31,253 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 12:17:34,903 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 12:17:34,905 - INFO - 127.0.0.1 - - [12/Feb/2026 12:17:34] "POST /upload HTTP/1.1" 200 -
+2026-02-12 12:36:12,616 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\utils.py', reloading
+2026-02-12 12:36:12,746 - INFO -  * Restarting with stat
+2026-02-12 12:36:13,016 - INFO - Starting the Flask application...
+2026-02-12 12:36:13,397 - WARNING -  * Debugger is active!
+2026-02-12 12:36:13,401 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 12:38:54,666 - INFO - Starting the Flask application...
+2026-02-12 12:38:55,194 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 12:38:55,195 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 12:38:55,196 - INFO -  * Restarting with stat
+2026-02-12 12:38:55,544 - INFO - Starting the Flask application...
+2026-02-12 12:38:56,042 - WARNING -  * Debugger is active!
+2026-02-12 12:38:56,049 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 12:39:02,755 - INFO - 127.0.0.1 - - [12/Feb/2026 12:39:02] "GET / HTTP/1.1" 200 -
+2026-02-12 12:39:02,892 - INFO - 127.0.0.1 - - [12/Feb/2026 12:39:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 12:39:08,120 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 12:39:19,942 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 12:39:22,376 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 12:39:22,378 - INFO - 127.0.0.1 - - [12/Feb/2026 12:39:22] "POST /upload HTTP/1.1" 200 -
+2026-02-12 12:40:24,448 - INFO - Starting the Flask application...
+2026-02-12 12:40:24,886 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 12:40:24,886 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 12:40:24,888 - INFO -  * Restarting with stat
+2026-02-12 12:40:25,145 - INFO - Starting the Flask application...
+2026-02-12 12:40:25,551 - WARNING -  * Debugger is active!
+2026-02-12 12:40:25,554 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 12:40:30,728 - INFO - 127.0.0.1 - - [12/Feb/2026 12:40:30] "GET / HTTP/1.1" 200 -
+2026-02-12 12:40:30,841 - INFO - 127.0.0.1 - - [12/Feb/2026 12:40:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 12:40:36,551 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 12:40:42,936 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 12:40:45,421 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 12:40:45,423 - INFO - 127.0.0.1 - - [12/Feb/2026 12:40:45] "POST /upload HTTP/1.1" 200 -
+2026-02-12 14:56:21,128 - INFO - Starting the Flask application...
+2026-02-12 14:56:21,660 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 14:56:21,661 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 14:56:21,661 - INFO -  * Restarting with stat
+2026-02-12 14:56:21,865 - INFO - Starting the Flask application...
+2026-02-12 14:56:22,137 - WARNING -  * Debugger is active!
+2026-02-12 14:56:22,141 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 14:57:28,907 - INFO - Starting the Flask application...
+2026-02-12 14:57:29,195 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 14:57:29,195 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 14:57:29,197 - INFO -  * Restarting with stat
+2026-02-12 14:57:29,392 - INFO - Starting the Flask application...
+2026-02-12 14:57:29,686 - WARNING -  * Debugger is active!
+2026-02-12 14:57:29,689 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 14:58:08,197 - INFO - 127.0.0.1 - - [12/Feb/2026 14:58:08] "GET / HTTP/1.1" 200 -
+2026-02-12 14:58:08,260 - INFO - 127.0.0.1 - - [12/Feb/2026 14:58:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 14:58:08,273 - INFO - 127.0.0.1 - - [12/Feb/2026 14:58:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-12 14:58:12,870 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 14:58:18,539 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 14:58:20,315 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 14:58:20,316 - INFO - 127.0.0.1 - - [12/Feb/2026 14:58:20] "POST /upload HTTP/1.1" 200 -
+2026-02-12 14:59:04,125 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-12 14:59:12,642 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:12] "GET / HTTP/1.1" 200 -
+2026-02-12 14:59:12,653 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 14:59:30,529 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:30] "GET /query HTTP/1.1" 200 -
+2026-02-12 14:59:35,387 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 14:59:35,467 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 14:59:35,486 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:35] "POST /query HTTP/1.1" 200 -
+2026-02-12 14:59:48,224 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:48] "GET /query HTTP/1.1" 200 -
+2026-02-12 14:59:52,153 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 14:59:52,183 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 14:59:52,185 - INFO - 127.0.0.1 - - [12/Feb/2026 14:59:52] "POST /query HTTP/1.1" 200 -
+2026-02-12 15:32:36,840 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\routes.py', reloading
+2026-02-12 15:32:36,933 - INFO -  * Restarting with stat
+2026-02-12 15:32:37,129 - INFO - Starting the Flask application...
+2026-02-12 15:45:13,966 - INFO - Starting the Flask application...
+2026-02-12 15:45:14,287 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 15:45:14,287 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 15:45:14,288 - INFO -  * Restarting with stat
+2026-02-12 15:45:14,483 - INFO - Starting the Flask application...
+2026-02-12 15:45:14,755 - WARNING -  * Debugger is active!
+2026-02-12 15:45:14,760 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 15:45:23,136 - INFO - 127.0.0.1 - - [12/Feb/2026 15:45:23] "GET / HTTP/1.1" 200 -
+2026-02-12 15:45:23,233 - INFO - 127.0.0.1 - - [12/Feb/2026 15:45:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 15:45:28,892 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 15:45:31,409 - INFO - 127.0.0.1 - - [12/Feb/2026 15:45:31] "POST /upload HTTP/1.1" 200 -
+2026-02-12 15:48:41,280 - INFO - Starting the Flask application...
+2026-02-12 15:48:41,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 15:48:41,597 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 15:48:41,598 - INFO -  * Restarting with stat
+2026-02-12 15:48:41,802 - INFO - Starting the Flask application...
+2026-02-12 15:48:42,075 - WARNING -  * Debugger is active!
+2026-02-12 15:48:42,077 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 15:48:53,293 - INFO - 127.0.0.1 - - [12/Feb/2026 15:48:53] "GET / HTTP/1.1" 200 -
+2026-02-12 15:48:53,356 - INFO - 127.0.0.1 - - [12/Feb/2026 15:48:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 15:48:58,357 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 15:49:05,847 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 15:49:06,073 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 500 17
+2026-02-12 15:49:06,076 - INFO - 127.0.0.1 - - [12/Feb/2026 15:49:06] "POST /upload HTTP/1.1" 200 -
+2026-02-12 15:53:57,594 - INFO - Starting the Flask application...
+2026-02-12 15:53:57,889 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 15:53:57,890 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 15:53:57,891 - INFO -  * Restarting with stat
+2026-02-12 15:53:58,163 - INFO - Starting the Flask application...
+2026-02-12 15:53:58,438 - WARNING -  * Debugger is active!
+2026-02-12 15:53:58,441 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 15:54:02,603 - INFO - 127.0.0.1 - - [12/Feb/2026 15:54:02] "GET / HTTP/1.1" 200 -
+2026-02-12 15:54:02,667 - INFO - 127.0.0.1 - - [12/Feb/2026 15:54:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 15:54:07,036 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 15:54:14,682 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 15:54:14,818 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 500 17
+2026-02-12 15:54:14,821 - INFO - 127.0.0.1 - - [12/Feb/2026 15:54:14] "POST /upload HTTP/1.1" 200 -
+2026-02-12 15:54:29,195 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\routes.py', reloading
+2026-02-12 15:54:29,279 - INFO -  * Restarting with stat
+2026-02-12 15:54:29,466 - INFO - Starting the Flask application...
+2026-02-12 15:54:29,748 - WARNING -  * Debugger is active!
+2026-02-12 15:54:29,750 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 15:55:04,149 - INFO - Starting the Flask application...
+2026-02-12 15:55:04,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 15:55:04,444 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 15:55:04,445 - INFO -  * Restarting with stat
+2026-02-12 15:55:04,646 - INFO - Starting the Flask application...
+2026-02-12 15:55:04,915 - WARNING -  * Debugger is active!
+2026-02-12 15:55:04,920 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 15:55:07,599 - INFO - 127.0.0.1 - - [12/Feb/2026 15:55:07] "GET / HTTP/1.1" 200 -
+2026-02-12 15:55:07,657 - INFO - 127.0.0.1 - - [12/Feb/2026 15:55:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 15:55:13,726 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 15:55:21,287 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 15:55:23,327 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 15:55:23,328 - INFO - 127.0.0.1 - - [12/Feb/2026 15:55:23] "POST /upload HTTP/1.1" 200 -
+2026-02-12 15:55:46,123 - INFO - 127.0.0.1 - - [12/Feb/2026 15:55:46] "GET /query HTTP/1.1" 200 -
+2026-02-12 15:55:51,372 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 15:55:51,397 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 15:55:51,410 - INFO - 127.0.0.1 - - [12/Feb/2026 15:55:51] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:05:43,540 - INFO - Starting the Flask application...
+2026-02-12 16:05:43,846 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:05:43,846 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:05:43,847 - INFO -  * Restarting with stat
+2026-02-12 16:05:44,044 - INFO - Starting the Flask application...
+2026-02-12 16:05:44,319 - WARNING -  * Debugger is active!
+2026-02-12 16:05:44,324 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:05:49,080 - INFO - 127.0.0.1 - - [12/Feb/2026 16:05:49] "GET / HTTP/1.1" 200 -
+2026-02-12 16:05:49,168 - INFO - 127.0.0.1 - - [12/Feb/2026 16:05:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:05:53,966 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:06:01,769 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:06:03,278 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 16:06:03,279 - INFO - 127.0.0.1 - - [12/Feb/2026 16:06:03] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:06:17,750 - INFO - 127.0.0.1 - - [12/Feb/2026 16:06:17] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:06:22,137 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:06:22,151 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 16:06:22,157 - INFO - 127.0.0.1 - - [12/Feb/2026 16:06:22] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:12:48,029 - INFO - Starting the Flask application...
+2026-02-12 16:12:48,315 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:12:48,316 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:12:48,316 - INFO -  * Restarting with stat
+2026-02-12 16:12:48,505 - INFO - Starting the Flask application...
+2026-02-12 16:12:48,772 - WARNING -  * Debugger is active!
+2026-02-12 16:12:48,774 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:12:55,266 - INFO - 127.0.0.1 - - [12/Feb/2026 16:12:55] "GET / HTTP/1.1" 200 -
+2026-02-12 16:12:55,364 - INFO - 127.0.0.1 - - [12/Feb/2026 16:12:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:13:00,228 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:13:07,196 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:13:08,647 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 16:13:08,648 - INFO - 127.0.0.1 - - [12/Feb/2026 16:13:08] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:17:28,284 - INFO - Starting the Flask application...
+2026-02-12 16:17:28,579 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:17:28,580 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:17:28,581 - INFO -  * Restarting with stat
+2026-02-12 16:17:28,789 - INFO - Starting the Flask application...
+2026-02-12 16:17:29,077 - WARNING -  * Debugger is active!
+2026-02-12 16:17:29,079 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:17:35,033 - INFO - 127.0.0.1 - - [12/Feb/2026 16:17:35] "GET / HTTP/1.1" 200 -
+2026-02-12 16:17:35,116 - INFO - 127.0.0.1 - - [12/Feb/2026 16:17:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:17:39,820 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:17:46,730 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:17:48,553 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 16:17:48,554 - INFO - 127.0.0.1 - - [12/Feb/2026 16:17:48] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:20:34,909 - INFO - 127.0.0.1 - - [12/Feb/2026 16:20:34] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:20:45,297 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:20:45,315 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 16:20:45,319 - INFO - 127.0.0.1 - - [12/Feb/2026 16:20:45] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:22:30,447 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\routes.py', reloading
+2026-02-12 16:22:30,534 - INFO -  * Restarting with stat
+2026-02-12 16:22:30,740 - INFO - Starting the Flask application...
+2026-02-12 16:22:31,039 - WARNING -  * Debugger is active!
+2026-02-12 16:22:31,042 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:23:42,711 - INFO - Starting the Flask application...
+2026-02-12 16:23:42,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:23:42,993 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:23:42,994 - INFO -  * Restarting with stat
+2026-02-12 16:23:43,176 - INFO - Starting the Flask application...
+2026-02-12 16:23:43,441 - WARNING -  * Debugger is active!
+2026-02-12 16:23:43,444 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:23:52,132 - INFO - 127.0.0.1 - - [12/Feb/2026 16:23:52] "GET / HTTP/1.1" 200 -
+2026-02-12 16:23:52,192 - INFO - 127.0.0.1 - - [12/Feb/2026 16:23:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:23:57,157 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:24:04,626 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:24:05,631 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 16:24:05,632 - INFO - 127.0.0.1 - - [12/Feb/2026 16:24:05] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:24:25,535 - INFO - 127.0.0.1 - - [12/Feb/2026 16:24:25] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:24:32,205 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:24:32,213 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/sparql HTTP/1.1" 405 20
+2026-02-12 16:24:32,213 - INFO - 127.0.0.1 - - [12/Feb/2026 16:24:32] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2026-02-12 16:26:40,817 - INFO -  * Detected change in 'C:\\Users\\faheemf\\Desktop\\Extension\\PolymerNexus\\app\\routes.py', reloading
+2026-02-12 16:26:40,911 - INFO -  * Restarting with stat
+2026-02-12 16:26:41,151 - INFO - Starting the Flask application...
+2026-02-12 16:26:41,757 - WARNING -  * Debugger is active!
+2026-02-12 16:26:41,765 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:27:42,356 - INFO - Starting the Flask application...
+2026-02-12 16:27:42,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:27:42,654 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:27:42,654 - INFO -  * Restarting with stat
+2026-02-12 16:27:42,850 - INFO - Starting the Flask application...
+2026-02-12 16:27:43,124 - WARNING -  * Debugger is active!
+2026-02-12 16:27:43,129 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:29:52,177 - INFO - Starting the Flask application...
+2026-02-12 16:29:52,468 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:29:52,469 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:29:52,470 - INFO -  * Restarting with stat
+2026-02-12 16:29:52,657 - INFO - Starting the Flask application...
+2026-02-12 16:29:52,939 - WARNING -  * Debugger is active!
+2026-02-12 16:29:52,944 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:29:55,938 - INFO - 127.0.0.1 - - [12/Feb/2026 16:29:55] "GET / HTTP/1.1" 200 -
+2026-02-12 16:29:56,004 - INFO - 127.0.0.1 - - [12/Feb/2026 16:29:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:30:01,403 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:30:07,717 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:30:08,672 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-12 16:30:08,673 - INFO - 127.0.0.1 - - [12/Feb/2026 16:30:08] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:30:47,220 - INFO - 127.0.0.1 - - [12/Feb/2026 16:30:47] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:31:01,803 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:31:01,814 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 16:31:01,821 - INFO - 127.0.0.1 - - [12/Feb/2026 16:31:01] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:31:22,275 - INFO - 127.0.0.1 - - [12/Feb/2026 16:31:22] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:31:25,671 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:31:25,694 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 16:31:25,696 - INFO - 127.0.0.1 - - [12/Feb/2026 16:31:25] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:31:26,904 - INFO - 127.0.0.1 - - [12/Feb/2026 16:31:26] "GET /query HTTP/1.1" 200 -
+2026-02-12 16:32:10,216 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-12 16:32:10,228 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-12 16:32:10,229 - INFO - 127.0.0.1 - - [12/Feb/2026 16:32:10] "POST /query HTTP/1.1" 200 -
+2026-02-12 16:49:23,265 - INFO - Starting the Flask application...
+2026-02-12 16:49:23,558 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:49:23,558 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:49:23,559 - INFO -  * Restarting with stat
+2026-02-12 16:49:23,757 - INFO - Starting the Flask application...
+2026-02-12 16:49:24,034 - WARNING -  * Debugger is active!
+2026-02-12 16:49:24,039 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:49:29,336 - INFO - 127.0.0.1 - - [12/Feb/2026 16:49:29] "GET / HTTP/1.1" 200 -
+2026-02-12 16:49:29,442 - INFO - 127.0.0.1 - - [12/Feb/2026 16:49:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:49:33,817 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:49:36,923 - INFO - 127.0.0.1 - - [12/Feb/2026 16:49:36] "POST /upload HTTP/1.1" 200 -
+2026-02-12 16:51:47,881 - INFO - Starting the Flask application...
+2026-02-12 16:51:48,182 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-12 16:51:48,182 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-12 16:51:48,183 - INFO -  * Restarting with stat
+2026-02-12 16:51:48,365 - INFO - Starting the Flask application...
+2026-02-12 16:51:48,625 - WARNING -  * Debugger is active!
+2026-02-12 16:51:48,629 - INFO -  * Debugger PIN: 383-807-711
+2026-02-12 16:52:28,232 - INFO - 127.0.0.1 - - [12/Feb/2026 16:52:28] "GET / HTTP/1.1" 200 -
+2026-02-12 16:52:28,326 - INFO - 127.0.0.1 - - [12/Feb/2026 16:52:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-12 16:52:32,772 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-12 16:52:36,599 - INFO - 127.0.0.1 - - [12/Feb/2026 16:52:36] "POST /upload HTTP/1.1" 200 -
+2026-02-15 15:16:32,283 - INFO - Starting the Flask application...
+2026-02-15 15:16:32,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-15 15:16:32,878 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-15 15:16:32,879 - INFO -  * Restarting with stat
+2026-02-15 15:16:33,208 - INFO - Starting the Flask application...
+2026-02-15 15:16:33,741 - WARNING -  * Debugger is active!
+2026-02-15 15:16:33,772 - INFO -  * Debugger PIN: 383-807-711
+2026-02-15 15:16:44,546 - INFO - 127.0.0.1 - - [15/Feb/2026 15:16:44] "GET / HTTP/1.1" 200 -
+2026-02-15 15:16:44,649 - INFO - 127.0.0.1 - - [15/Feb/2026 15:16:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-02-15 15:16:50,570 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-15 15:17:03,696 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 15:17:08,159 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-15 15:17:08,161 - INFO - 127.0.0.1 - - [15/Feb/2026 15:17:08] "POST /upload HTTP/1.1" 200 -
+2026-02-15 15:21:34,470 - INFO - 127.0.0.1 - - [15/Feb/2026 15:21:34] "[33mGET /query/ HTTP/1.1[0m" 404 -
+2026-02-15 15:21:48,457 - INFO - 127.0.0.1 - - [15/Feb/2026 15:21:48] "GET /query HTTP/1.1" 200 -
+2026-02-15 15:21:53,372 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 15:21:53,749 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 15:21:53,772 - INFO - 127.0.0.1 - - [15/Feb/2026 15:21:53] "POST /query HTTP/1.1" 200 -
+2026-02-15 15:22:13,629 - INFO - 127.0.0.1 - - [15/Feb/2026 15:22:13] "GET /query HTTP/1.1" 200 -
+2026-02-15 15:22:18,329 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 15:22:18,412 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 15:22:18,415 - INFO - 127.0.0.1 - - [15/Feb/2026 15:22:18] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:52:36,229 - INFO - Starting the Flask application...
+2026-02-15 20:52:40,771 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-15 20:52:40,775 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-15 20:52:40,790 - INFO -  * Restarting with stat
+2026-02-15 20:52:41,096 - INFO - Starting the Flask application...
+2026-02-15 20:52:41,427 - WARNING -  * Debugger is active!
+2026-02-15 20:52:41,430 - INFO -  * Debugger PIN: 383-807-711
+2026-02-15 20:53:09,177 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:09] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:53:09,233 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-15 20:53:15,676 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:53:15,906 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:53:15,935 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:15] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:53:19,139 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:19] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:53:25,641 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:53:25,731 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:53:25,737 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:25] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:53:40,778 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:40] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:53:47,673 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:53:47,777 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:53:47,779 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:47] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:53:50,566 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:50] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:53:59,358 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:53:59,415 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:53:59,419 - INFO - 127.0.0.1 - - [15/Feb/2026 20:53:59] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:54:03,084 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:03] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:54:09,948 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:54:10,043 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:54:10,046 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:10] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:54:29,520 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:29] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:54:35,555 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:54:35,590 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:54:35,592 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:35] "POST /query HTTP/1.1" 200 -
+2026-02-15 20:54:38,018 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:38] "GET /query HTTP/1.1" 200 -
+2026-02-15 20:54:45,560 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-15 20:54:45,629 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-15 20:54:45,632 - INFO - 127.0.0.1 - - [15/Feb/2026 20:54:45] "POST /query HTTP/1.1" 200 -
+2026-02-16 09:53:39,163 - INFO - Starting the Flask application...
+2026-02-16 09:53:39,622 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-16 09:53:39,623 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-16 09:53:39,624 - INFO -  * Restarting with stat
+2026-02-16 09:53:39,823 - INFO - Starting the Flask application...
+2026-02-16 09:53:40,090 - WARNING -  * Debugger is active!
+2026-02-16 09:53:40,095 - INFO -  * Debugger PIN: 383-807-711
+2026-02-16 09:53:47,359 - INFO - 127.0.0.1 - - [16/Feb/2026 09:53:47] "GET / HTTP/1.1" 200 -
+2026-02-16 09:53:47,449 - INFO - 127.0.0.1 - - [16/Feb/2026 09:53:47] "GET /static/styles.css HTTP/1.1" 200 -
+2026-02-16 09:53:52,526 - INFO - File uploaded: SSBR_Requests_9Dec_EditedQualityNames.xlsx
+2026-02-16 09:53:58,435 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:53:59,939 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers/statements HTTP/1.1" 204 0
+2026-02-16 09:53:59,941 - INFO - 127.0.0.1 - - [16/Feb/2026 09:53:59] "POST /upload HTTP/1.1" 200 -
+2026-02-16 09:54:15,171 - INFO - 127.0.0.1 - - [16/Feb/2026 09:54:15] "GET /query HTTP/1.1" 200 -
+2026-02-16 09:54:39,532 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:54:39,553 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-16 09:54:39,562 - INFO - 127.0.0.1 - - [16/Feb/2026 09:54:39] "POST /query HTTP/1.1" 200 -
+2026-02-16 09:54:51,758 - INFO - 127.0.0.1 - - [16/Feb/2026 09:54:51] "GET /query HTTP/1.1" 200 -
+2026-02-16 09:55:10,899 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:55:10,935 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-16 09:55:10,936 - INFO - 127.0.0.1 - - [16/Feb/2026 09:55:10] "POST /query HTTP/1.1" 200 -
+2026-02-16 09:55:47,263 - INFO - 127.0.0.1 - - [16/Feb/2026 09:55:47] "GET /query HTTP/1.1" 200 -
+2026-02-16 09:56:03,682 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:56:03,692 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-16 09:56:03,693 - INFO - 127.0.0.1 - - [16/Feb/2026 09:56:03] "POST /query HTTP/1.1" 200 -
+2026-02-16 09:56:20,770 - INFO - 127.0.0.1 - - [16/Feb/2026 09:56:20] "GET /query HTTP/1.1" 200 -
+2026-02-16 09:56:45,800 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:56:45,815 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-16 09:56:45,817 - INFO - 127.0.0.1 - - [16/Feb/2026 09:56:45] "POST /query HTTP/1.1" 200 -
+2026-02-16 09:57:08,384 - INFO - 127.0.0.1 - - [16/Feb/2026 09:57:08] "GET /query HTTP/1.1" 200 -
+2026-02-16 09:57:42,382 - DEBUG - Starting new HTTP connection (1): localhost:7200
+2026-02-16 09:57:42,399 - DEBUG - http://localhost:7200 "POST /repositories/ArlanxeoPolymers HTTP/1.1" 200 None
+2026-02-16 09:57:42,400 - INFO - 127.0.0.1 - - [16/Feb/2026 09:57:42] "POST /query HTTP/1.1" 200 -

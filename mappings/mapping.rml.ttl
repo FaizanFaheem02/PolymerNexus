@@ -1,0 +1,120 @@
+@base <http://example.com/rml/> .
+
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix rml:  <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:   <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iao:  <http://purl.obolibrary.org/obo/iao.owl/> .
+@prefix obi: <http://purl.obolibrary.org/obo/obi.owl/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix pmd: <https://w3id.org/pmd/co/> .
+@prefix isk: <https://tib.eu/ontologies/isk/> .
+
+<#Source>
+    a rml:LogicalSource ;
+    rml:source "C:/Users/faheemf/Desktop/Extension/PolymerNexus/output/all_measurements.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#ObjectTM>
+    a rr:TriplesMap ;
+    rml:logicalSource <#Source> ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/ontologies/isk/{is_about}" ;
+        rr:class pmd:Object ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "is_about" ] ] .
+
+<#QualityTM>
+    a rr:TriplesMap ;
+    rml:logicalSource <#Source> ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/ontologies/isk/{is_quality_measurement_of}" ;
+        rr:class pmd:Quality ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "is_quality_measurement_of" ] ] .
+
+<#SMD_TM>
+    a rr:TriplesMap ;
+    rml:logicalSource <#Source> ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/ontologies/isk/{is_about}_SMD_{is_quality_measurement_of}" ;
+        rr:class iao:IAO_0000032 ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate iao:IAO_0000136 ;
+        rr:objectMap [
+            rr:template "https://tib.eu/ontologies/isk/{is_about}" ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate iao:IAO_0000221 ;
+        rr:objectMap [
+            rr:template "https://tib.eu/ontologies/isk/{is_quality_measurement_of}" ] ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:OBI_0001938 ;
+    rr:objectMap [
+        rr:template "https://tib.eu/ontologies/isk/{is_about}_SVS_{is_quality_measurement_of}" ] ] .
+
+<#SVS_TM>
+    a rr:TriplesMap ;
+    rml:logicalSource <#Source> ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/ontologies/isk/{is_about}_SVS_{is_quality_measurement_of}" ;
+        rr:class obi:OBI_0001931 ] ;
+ 
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "{is_about}_SVS_{is_quality_measurement_of}" ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate iao:IAO_0000136 ;
+        rr:objectMap [
+            rr:template "https://tib.eu/ontologies/isk/{is_about}" ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:OBI_0001927 ;
+        rr:objectMap [
+            rr:template "https://tib.eu/ontologies/isk/{is_quality_measurement_of}" ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:OBI_0001937 ;
+        rr:objectMap [
+            rml:reference "has_specified_numeric_value" ;
+            rr:datatype xsd:float ] ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate iao:IAO_0000039 ;
+        rr:objectMap [
+            rr:template "https://tib.eu/ontologies/isk/{has_measurement_unit_label}" ] ] .
+    
+<#UnitTM>
+    a rr:TriplesMap ;
+    rml:logicalSource <#Source> ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/ontologies/isk/{has_measurement_unit_label}" ;
+        rr:class iao:IAO_0000003 ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "has_measurement_unit_label" ] ] .
+
+
+
+
+
+

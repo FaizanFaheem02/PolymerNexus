@@ -2,10 +2,7 @@ from flask import Blueprint, render_template, request, Response, current_app,jso
 import os
 import time
 from werkzeug.utils import secure_filename
-from .utils import generate_output_filename, readIndivSheetsTransformToCSV, preprocessSSBRRequestsFile, \
-    readOntologyCSVAndBuildDataTriples, process_directory, upload_to_graphdb, run_sparql_query
-from os import listdir
-from os.path import isfile, join
+from .utils import preprocessSSBRRequestsFile, upload_to_graphdb, run_sparql_query, run_rmlmapper
 import csv
 import io
 #from bs4 import BeautifulSoup
@@ -40,9 +37,9 @@ def generate_progress_messages():
         "Validating file...",
         "Saving file...",
         "Transforming raw data file to specific template csv files...",
-        "Generating graph files in ttl format from template csv files...",
-        "Graph files generated, Please check the output folder for template csv files generated and output/output_valid_graphs folder for graph files!...",
-        "Uploading graph files to GraphDB Repository",
+        "Generating RDF using RMLMapper...",
+        "RDF generated successfully (rml_output.ttl)",
+        "Uploading RDF graph to GraphDB Repository",
         "Use endpoint - http://127.0.0.1:5000/query to query the data in GraphDB"
     ]
     for step in steps:
@@ -133,35 +130,23 @@ def upload_file():
         current_app.logger.info(f"File uploaded: {file.filename}")  # Log at INFO level
         templateFilePath = os.path.join(current_app.config['UPLOAD_FOLDER'],'templateFile.csv')
 
-        # Read the Excel file into a Pandas DataFrame
-        #df = pd.read_excel(filepath)
-
         # Call generate schema functions here
         preprocessSSBRRequestsFile(file_path,templateFilePath)
 
-        owlFilePath = os.path.join(current_app.config['UPLOAD_FOLDER'],'digitrubber-full.ttl')
+        # --- NEW: Run RML pipeline in parallel ---
+        rml_ttl_path = run_rmlmapper()
+        print(f"RML TTL generated at: {rml_ttl_path}")
 
-        #Call to generate ttl files for generated/transformed csv files
-        onlyfiles = [f for f in listdir(current_app.config['OUTPUT_FOLDER']) if isfile(join(current_app.config['OUTPUT_FOLDER'], f))]
-        current_app.logger.info(f"File to generate Graph from:",onlyfiles)
 
-        for eachFile in onlyfiles:
-            eachFileFullPath = (current_app.config['OUTPUT_FOLDER'])+"//"+eachFile
-            fileNameWithoutExt = eachFile[:-4]
-            #print("File name without ext ",fileNameWithoutExt)
-            readOntologyCSVAndBuildDataTriples(owlFilePath,eachFileFullPath,fileNameWithoutExt)
-        input_directory = current_app.config['OUTPUT_GRAPH_FOLDER']
-        output_directory = "output_valid_graphs/"
-        process_directory(input_directory, output_directory)
-
-        # Upload TTL files to GraphDB with secure credentials
+        # Upload RML-generated TTL to GraphDB
         username = current_app.config.get('GRAPHDB_USERNAME')
         password = current_app.config.get('GRAPHDB_PASSWORD')
-        for ttl_file in os.listdir(output_directory):
-            ttl_path = os.path.join(output_directory, ttl_file)
-            graphdb_repo_url = f"http://localhost:7200/repositories/{current_app.config['GRAPHDB_REPO']}"
-            upload_to_graphdb(graphdb_repo_url, ttl_path, username, password)
-            #upload_to_graphdb(current_app.config['GRAPHDB_REPO'], ttl_path, username, password)
+
+        graphdb_repo_url = f"http://localhost:7200/repositories/{current_app.config['GRAPHDB_REPO']}"
+
+        upload_to_graphdb(graphdb_repo_url, rml_ttl_path, username, password)
+
+
 
         return Response(generate_progress_messages(), content_type='text/event-stream')
 
