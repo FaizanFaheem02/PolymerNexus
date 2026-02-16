@@ -14,7 +14,7 @@
 
 <#Source>
     a rml:LogicalSource ;
-    rml:source "C:/Users/faheemf/Desktop/Extension/PolymerNexus/output/all_measurements.csv" ;
+    rml:source "output/all_measurements.csv" ;
     rml:referenceFormulation ql:CSV .
 
 <#ObjectTM>
