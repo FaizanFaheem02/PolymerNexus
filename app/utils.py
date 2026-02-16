@@ -348,15 +348,7 @@ def run_rmlmapper():
 
     os.makedirs(current_app.config["OUTPUT_GRAPH_FOLDER"], exist_ok=True)
 
-    cmd = [
-        "java",
-        "-jar",
-        jar_path,
-        "-m",
-        mapping_path,
-        "-o",
-        output_ttl
-    ]
+    cmd = [ "java", "-jar", jar_path, "-m", mapping_path, "-o", output_ttl]
 
     print("Running RMLMapper command:")
     print(" ".join(cmd))
