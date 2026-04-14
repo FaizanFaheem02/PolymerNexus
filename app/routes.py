@@ -586,6 +586,35 @@ def get_slots():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# starts here 
+@bp.route('/get_properties')
+def get_properties():
+    query = """
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX iao: <http://purl.obolibrary.org/obo/iao.owl/>
+
+    SELECT DISTINCT ?label WHERE {
+        ?smd iao:IAO_0000221 ?quality .
+        ?quality rdfs:label ?label .
+    }
+    ORDER BY ?label
+    """
+
+    repo_url = f"http://localhost:7200/repositories/{current_app.config['GRAPHDB_REPO']}"
+    username = current_app.config.get("GRAPHDB_USERNAME")
+    password = current_app.config.get("GRAPHDB_PASSWORD")
+
+    results = run_sparql_query(repo_url, query, username, password)
+
+    properties = [
+        r["label"]["value"]
+        for r in results["results"]["bindings"]
+    ]
+
+    return jsonify(properties)
+
+# end here 
+
 @bp.route('/graph/object/<object_name>', methods=['GET'])
 def get_object_graph(object_name):
     """

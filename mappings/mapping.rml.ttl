@@ -61,6 +61,7 @@
         rr:objectMap [
             rr:template "https://tib.eu/ontologies/isk/{is_quality_measurement_of}" ] ] ;
 
+
     rr:predicateObjectMap [
     rr:predicate obi:OBI_0001938 ;
     rr:objectMap [
@@ -98,7 +99,7 @@
     rr:predicateObjectMap [
         rr:predicate iao:IAO_0000039 ;
         rr:objectMap [
-            rr:template "https://tib.eu/ontologies/isk/{has_measurement_unit_label}" ] ] .
+            rml:reference "has_measurement_unit_label" ] ] .
     
 <#UnitTM>
     a rr:TriplesMap ;
