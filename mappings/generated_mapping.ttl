@@ -229,6 +229,101 @@
         ]
     ] .
 
+# charts
+
+<#ChartsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:sqlQuery """SELECT id, name, description, data, config, label, chartgable_id, chartgable_type, created_at, updated_at FROM charts"""
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/chart/{id}" ;
+        rr:class ex:Chart
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:data ;
+
+        rr:objectMap [
+            rr:column "data" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:config ;
+
+        rr:objectMap [
+            rr:column "config" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:label ;
+
+        rr:objectMap [
+            rr:column "label" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:chartgableId ;
+
+        rr:objectMap [
+            rr:column "chartgable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:chartgableType ;
+
+        rr:objectMap [
+            rr:column "chartgable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
 # cities
 
 <#CitiesTM>

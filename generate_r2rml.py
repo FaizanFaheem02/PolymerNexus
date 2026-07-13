@@ -1,7 +1,6 @@
 import pymysql
 import os
 import pandas as pd
-import re
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -26,7 +25,6 @@ tables = pd.read_sql(
     FROM information_schema.tables
     WHERE table_schema = 'insuka'
       AND table_type = 'BASE TABLE'
-      AND table_name <> 'charts'
     ORDER BY table_name;
     """,
     connection
@@ -49,7 +47,6 @@ columns = pd.read_sql(
         ordinal_position
     FROM information_schema.columns
     WHERE table_schema = 'insuka'
-     AND table_name <> 'charts'
     ORDER BY table_name, ordinal_position;
     """,
     connection
@@ -69,7 +66,6 @@ primary_keys = pd.read_sql(
     FROM information_schema.key_column_usage
     WHERE table_schema = 'insuka'
       AND constraint_name = 'PRIMARY'
-      AND table_name <> 'charts'
     ORDER BY table_name, ordinal_position;
     """,
     connection
@@ -91,8 +87,6 @@ foreign_keys = pd.read_sql(
     FROM information_schema.key_column_usage
     WHERE table_schema = 'insuka'
       AND referenced_table_name IS NOT NULL
-      AND table_name <> 'charts'
-      AND referenced_table_name <> 'charts'
     ORDER BY table_name, column_name;
     """,
     connection
@@ -273,6 +267,8 @@ mapping_lines = [
 # Generate one TriplesMap for every database table
 for table_name in tables["table_name"]:
 
+    #if table_name == "charts":
+       # continue
     triples_map_name = (
         to_pascal_case(table_name) + "TM"
     )
@@ -308,8 +304,24 @@ for table_name in tables["table_name"]:
         f"<#{triples_map_name}>",
         "    a rr:TriplesMap ;",
         "",
-        "    rr:logicalTable [",
-        f'        rr:tableName "{table_name}"',
+        "    rr:logicalTable ["
+    ])
+
+    if table_name == "charts":
+        mapping_lines.append(
+            '        rr:sqlQuery """'
+            'SELECT '
+            'id, name, description, data, config, label, '
+            'chartgable_id, chartgable_type, created_at, updated_at '
+            'FROM charts'
+            '"""'
+        )
+    else:
+        mapping_lines.append(
+            f'        rr:tableName "{table_name}"'
+        )
+
+    mapping_lines.extend([
         "    ] ;",
         "",
         "    rr:subjectMap [",
@@ -333,6 +345,13 @@ for table_name in tables["table_name"]:
     for _, column in table_columns.iterrows():
 
         column_name = column["column_name"]
+
+        # Temporarily exclude only processed_data from charts
+        if (
+            table_name == "charts"
+            and column_name == "processed_data"
+        ):
+            continue
 
         # Do not generate literals for primary keys
         if column_name in primary_key_columns:
