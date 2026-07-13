@@ -1,0 +1,7571 @@
+@base <http://example.com/rml/> .
+
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ex: <https://tib.eu/insuka/> .
+
+
+# applications
+
+<#ApplicationsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "applications"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/application/{id}" ;
+        rr:class ex:Application
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# application_recipe
+
+<#ApplicationRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "application_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/applicationRecipe/{id}" ;
+        rr:class ex:ApplicationRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToApplication ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ApplicationsTM> ;
+
+            rr:joinCondition [
+                rr:child "application_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# audits
+
+<#AuditsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "audits"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/audit/{id}" ;
+        rr:class ex:Audit
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:userType ;
+
+        rr:objectMap [
+            rr:column "user_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:userId ;
+
+        rr:objectMap [
+            rr:column "user_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:event ;
+
+        rr:objectMap [
+            rr:column "event" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:auditableType ;
+
+        rr:objectMap [
+            rr:column "auditable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:auditableId ;
+
+        rr:objectMap [
+            rr:column "auditable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:oldValues ;
+
+        rr:objectMap [
+            rr:column "old_values" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:newValues ;
+
+        rr:objectMap [
+            rr:column "new_values" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:url ;
+
+        rr:objectMap [
+            rr:column "url" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:ipAddress ;
+
+        rr:objectMap [
+            rr:column "ip_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:userAgent ;
+
+        rr:objectMap [
+            rr:column "user_agent" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tags ;
+
+        rr:objectMap [
+            rr:column "tags" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# cities
+
+<#CitiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "cities"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/city/{id}" ;
+        rr:class ex:City
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:countryId ;
+
+        rr:objectMap [
+            rr:column "country_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# countries
+
+<#CountriesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "countries"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/country/{id}" ;
+        rr:class ex:Country
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] .
+
+# cross_links
+
+<#CrossLinksTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "cross_links"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/crossLink/{id}" ;
+        rr:class ex:CrossLink
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# cross_link_recipe
+
+<#CrossLinkRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "cross_link_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/crossLinkRecipe/{id}" ;
+        rr:class ex:CrossLinkRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToCrossLink ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#CrossLinksTM> ;
+
+            rr:joinCondition [
+                rr:child "cross_link_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# customers
+
+<#CustomersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "customers"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/customer/{id}" ;
+        rr:class ex:Customer
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:billType ;
+
+        rr:objectMap [
+            rr:column "bill_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:company ;
+
+        rr:objectMap [
+            rr:column "company" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phone ;
+
+        rr:objectMap [
+            rr:column "phone" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mobile ;
+
+        rr:objectMap [
+            rr:column "mobile" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mailAddress ;
+
+        rr:objectMap [
+            rr:column "mail_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isSme ;
+
+        rr:objectMap [
+            rr:column "is_sme" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyAddress ;
+
+        rr:objectMap [
+            rr:column "company_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyPostalCode ;
+
+        rr:objectMap [
+            rr:column "company_postal_code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyCity ;
+
+        rr:objectMap [
+            rr:column "company_city" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyCountry ;
+
+        rr:objectMap [
+            rr:column "company_country" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:billingAddress ;
+
+        rr:objectMap [
+            rr:column "billing_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:billingPostalCode ;
+
+        rr:objectMap [
+            rr:column "billing_postal_code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:billingCity ;
+
+        rr:objectMap [
+            rr:column "billing_city" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:billingCountry ;
+
+        rr:objectMap [
+            rr:column "billing_country" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isUseSameAddressForBilling ;
+
+        rr:objectMap [
+            rr:column "is_use_same_address_for_billing" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# failed_jobs
+
+<#FailedJobsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "failed_jobs"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/failedJob/{id}" ;
+        rr:class ex:FailedJob
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:uuid ;
+
+        rr:objectMap [
+            rr:column "uuid" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:connection ;
+
+        rr:objectMap [
+            rr:column "connection" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:queue ;
+
+        rr:objectMap [
+            rr:column "queue" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:payload ;
+
+        rr:objectMap [
+            rr:column "payload" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:exception ;
+
+        rr:objectMap [
+            rr:column "exception" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:failedAt ;
+
+        rr:objectMap [
+            rr:column "failed_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# files
+
+<#FilesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "files"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/file/{id}" ;
+        rr:class ex:File
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:extension ;
+
+        rr:objectMap [
+            rr:column "extension" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:path ;
+
+        rr:objectMap [
+            rr:column "path" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:thumb ;
+
+        rr:objectMap [
+            rr:column "thumb" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:label ;
+
+        rr:objectMap [
+            rr:column "label" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:size ;
+
+        rr:objectMap [
+            rr:column "size" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:filegableId ;
+
+        rr:objectMap [
+            rr:column "filegable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:filegableType ;
+
+        rr:objectMap [
+            rr:column "filegable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isDefault ;
+
+        rr:objectMap [
+            rr:column "is_default" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:displayName ;
+
+        rr:objectMap [
+            rr:column "display_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToFileCategory ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#FileCategoriesTM> ;
+
+            rr:joinCondition [
+                rr:child "file_category_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToFileType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#FileTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "file_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# file_categories
+
+<#FileCategoriesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "file_categories"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/fileCategory/{id}" ;
+        rr:class ex:FileCategory
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:fileName ;
+
+        rr:objectMap [
+            rr:column "file_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:properties ;
+
+        rr:objectMap [
+            rr:column "properties" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# file_types
+
+<#FileTypesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "file_types"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/fileType/{id}" ;
+        rr:class ex:FileType
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:glyph ;
+
+        rr:objectMap [
+            rr:column "glyph" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isPreview ;
+
+        rr:objectMap [
+            rr:column "is_preview" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# gates
+
+<#GatesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "gates"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/gate/{id}" ;
+        rr:class ex:Gate
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:gateType ;
+
+        rr:objectMap [
+            rr:column "gate_type"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:position ;
+
+        rr:objectMap [
+            rr:column "position"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:time ;
+
+        rr:objectMap [
+            rr:column "time" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperature ;
+
+        rr:objectMap [
+            rr:column "temperature" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:energy ;
+
+        rr:objectMap [
+            rr:column "energy" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:turning ;
+
+        rr:objectMap [
+            rr:column "turning" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:section ;
+
+        rr:objectMap [
+            rr:column "section"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:gateableId ;
+
+        rr:objectMap [
+            rr:column "gateable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:gateableType ;
+
+        rr:objectMap [
+            rr:column "gateable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machineSetting ;
+
+        rr:objectMap [
+            rr:column "machine_setting" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machineSettingValue ;
+
+        rr:objectMap [
+            rr:column "machine_setting_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machineSettingValueLower ;
+
+        rr:objectMap [
+            rr:column "machine_setting_value_lower" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:positionLower ;
+
+        rr:objectMap [
+            rr:column "position_lower"
+        ]
+    ] .
+
+# ingredients
+
+<#IngredientsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "ingredients"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/ingredient/{id}" ;
+        rr:class ex:Ingredient
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phr ;
+
+        rr:objectMap [
+            rr:column "phr" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:density ;
+
+        rr:objectMap [
+            rr:column "density" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:volume ;
+
+        rr:objectMap [
+            rr:column "volume" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mass ;
+
+        rr:objectMap [
+            rr:column "mass" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# ingredient_recipe
+
+<#IngredientRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "ingredient_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/ingredientRecipe/{id}" ;
+        rr:class ex:IngredientRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToIngredient ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#IngredientsTM> ;
+
+            rr:joinCondition [
+                rr:child "ingredient_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# jobs
+
+<#JobsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "jobs"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/job/{id}" ;
+        rr:class ex:Job
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:queue ;
+
+        rr:objectMap [
+            rr:column "queue" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:payload ;
+
+        rr:objectMap [
+            rr:column "payload" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:attempts ;
+
+        rr:objectMap [
+            rr:column "attempts" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:reservedAt ;
+
+        rr:objectMap [
+            rr:column "reserved_at" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:availableAt ;
+
+        rr:objectMap [
+            rr:column "available_at" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:integer
+        ]
+    ] .
+
+# langs
+
+<#LangsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "langs"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/lang/{id}" ;
+        rr:class ex:Lang
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:label ;
+
+        rr:objectMap [
+            rr:column "label" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# machines
+
+<#MachinesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machines"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machine/{id}" ;
+        rr:class ex:Machine
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:identifier ;
+
+        rr:objectMap [
+            rr:column "identifier" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:serialNumber ;
+
+        rr:objectMap [
+            rr:column "serial_number" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:software ;
+
+        rr:objectMap [
+            rr:column "software" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:manufacturer ;
+
+        rr:objectMap [
+            rr:column "manufacturer" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:model ;
+
+        rr:objectMap [
+            rr:column "model" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:manufactureYearAt ;
+
+        rr:objectMap [
+            rr:column "manufacture_year_at" ;
+            rr:datatype xsd:date
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:softwareVersion ;
+
+        rr:objectMap [
+            rr:column "software_version" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:location ;
+
+        rr:objectMap [
+            rr:column "location" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachineType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachineTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProcess ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProcessesTM> ;
+
+            rr:joinCondition [
+                rr:child "process_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethodType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_machine_tool
+
+<#MachineMachineToolTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_machine_tool"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineMachineTool/{id}" ;
+        rr:class ex:MachineMachineTool
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_tool_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_norm
+
+<#MachineNormTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_norm"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineNorm/{id}" ;
+        rr:class ex:MachineNorm
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_properties
+
+<#MachinePropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineProperty/{id}" ;
+        rr:class ex:MachineProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:value ;
+
+        rr:objectMap [
+            rr:column "value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machinePropertyableId ;
+
+        rr:objectMap [
+            rr:column "machine_propertyable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machinePropertyableType ;
+
+        rr:objectMap [
+            rr:column "machine_propertyable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:stringValue ;
+
+        rr:objectMap [
+            rr:column "string_value" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachineSetting ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachineSettingsTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_setting_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_settings
+
+<#MachineSettingsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_settings"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineSetting/{id}" ;
+        rr:class ex:MachineSetting
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:min ;
+
+        rr:objectMap [
+            rr:column "min" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:max ;
+
+        rr:objectMap [
+            rr:column "max" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:ramPosition ;
+
+        rr:objectMap [
+            rr:column "ram_position"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_test_method_type
+
+<#MachineTestMethodTypeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_test_method_type"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineTestMethodType/{id}" ;
+        rr:class ex:MachineTestMethodType
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethodType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# machine_types
+
+<#MachineTypesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "machine_types"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/machineType/{id}" ;
+        rr:class ex:MachineType
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# materials
+
+<#MaterialsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "materials"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/material/{id}" ;
+        rr:class ex:Material
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:materialKeyFeatureId ;
+
+        rr:objectMap [
+            rr:column "material_key_feature_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:keyFeature ;
+
+        rr:objectMap [
+            rr:column "key_feature" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:casNumber ;
+
+        rr:objectMap [
+            rr:column "cas_number" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:applicationArea ;
+
+        rr:objectMap [
+            rr:column "application_area" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:physicalForm ;
+
+        rr:objectMap [
+            rr:column "physical_form" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:chemicalComposition ;
+
+        rr:objectMap [
+            rr:column "chemical_composition" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:compoundingIngredient ;
+
+        rr:objectMap [
+            rr:column "compounding_ingredient" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:modeOfAction ;
+
+        rr:objectMap [
+            rr:column "mode_of_action" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:processing ;
+
+        rr:objectMap [
+            rr:column "processing" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:recommendedDosage ;
+
+        rr:objectMap [
+            rr:column "recommended_dosage" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:storageConditions ;
+
+        rr:objectMap [
+            rr:column "storage_conditions" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:shelfLife ;
+
+        rr:objectMap [
+            rr:column "shelf_life" ;
+            rr:datatype xsd:date
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:storageLocation ;
+
+        rr:objectMap [
+            rr:column "storage_location" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:appearance ;
+
+        rr:objectMap [
+            rr:column "appearance" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:internalAvailability ;
+
+        rr:objectMap [
+            rr:column "internal_availability" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:pdsChangeDate ;
+
+        rr:objectMap [
+            rr:column "pds_change_date" ;
+            rr:datatype xsd:date
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:sdsChangeDate ;
+
+        rr:objectMap [
+            rr:column "sds_change_date" ;
+            rr:datatype xsd:date
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:molecularFormulaText ;
+
+        rr:objectMap [
+            rr:column "molecular_formula_text" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hNotes ;
+
+        rr:objectMap [
+            rr:column "h_notes" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:pNotes ;
+
+        rr:objectMap [
+            rr:column "p_notes" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:note ;
+
+        rr:objectMap [
+            rr:column "note" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:url ;
+
+        rr:objectMap [
+            rr:column "url" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:labeling ;
+
+        rr:objectMap [
+            rr:column "labeling" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:processingBehaviour ;
+
+        rr:objectMap [
+            rr:column "processing_behaviour" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:activeIngredient ;
+
+        rr:objectMap [
+            rr:column "active_ingredient" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:applicationUse ;
+
+        rr:objectMap [
+            rr:column "application_use" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToApplication ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ApplicationsTM> ;
+
+            rr:joinCondition [
+                rr:child "application_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProject ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProjectsTM> ;
+
+            rr:joinCondition [
+                rr:child "project_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToSupplier ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#SuppliersTM> ;
+
+            rr:joinCondition [
+                rr:child "supplier_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_classes
+
+<#MaterialClassesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_classes"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialClass/{id}" ;
+        rr:class ex:MaterialClass
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:level ;
+
+        rr:objectMap [
+            rr:column "level" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialClass ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialClassesTM> ;
+
+            rr:joinCondition [
+                rr:child "parent_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_class_properties
+
+<#MaterialClassPropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_class_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialClassProperty/{id}" ;
+        rr:class ex:MaterialClassProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:property ;
+
+        rr:objectMap [
+            rr:column "property" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialClass ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialClassesTM> ;
+
+            rr:joinCondition [
+                rr:child "material_class_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_material_class
+
+<#MaterialMaterialClassTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_material_class"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialMaterialClass/{id}" ;
+        rr:class ex:MaterialMaterialClass
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialClass ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialClassesTM> ;
+
+            rr:joinCondition [
+                rr:child "material_class_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_properties
+
+<#MaterialPropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialProperty/{id}" ;
+        rr:class ex:MaterialProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:min ;
+
+        rr:objectMap [
+            rr:column "min" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:max ;
+
+        rr:objectMap [
+            rr:column "max" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:condition ;
+
+        rr:objectMap [
+            rr:column "condition" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:methode ;
+
+        rr:objectMap [
+            rr:column "methode" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:chemicalComposition ;
+
+        rr:objectMap [
+            rr:column "chemical_composition" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_property_norm
+
+<#MaterialPropertyNormTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_property_norm"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialPropertyNorm/{id}" ;
+        rr:class ex:MaterialPropertyNorm
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialProperty ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialPropertiesTM> ;
+
+            rr:joinCondition [
+                rr:child "material_property_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_recipe_step
+
+<#MaterialRecipeStepTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_recipe_step"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialRecipeStep/{id}" ;
+        rr:class ex:MaterialRecipeStep
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phr ;
+
+        rr:objectMap [
+            rr:column "phr" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipeStep ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipeStepsTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_step_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_supplies
+
+<#MaterialSuppliesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_supplies"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialSupply/{id}" ;
+        rr:class ex:MaterialSupply
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tradeName ;
+
+        rr:objectMap [
+            rr:column "trade_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:batch ;
+
+        rr:objectMap [
+            rr:column "batch" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amount ;
+
+        rr:objectMap [
+            rr:column "amount" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:expiredAt ;
+
+        rr:objectMap [
+            rr:column "expired_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToSupplier ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#SuppliersTM> ;
+
+            rr:joinCondition [
+                rr:child "supplier_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_supply_recipe
+
+<#MaterialSupplyRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_supply_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialSupplyRecipe/{id}" ;
+        rr:class ex:MaterialSupplyRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialSupply ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialSuppliesTM> ;
+
+            rr:joinCondition [
+                rr:child "material_supply_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# material_symbol
+
+<#MaterialSymbolTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "material_symbol"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/materialSymbol/{id}" ;
+        rr:class ex:MaterialSymbol
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToSymbol ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#SymbolsTM> ;
+
+            rr:joinCondition [
+                rr:child "symbol_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# methods
+
+<#MethodsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "methods"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/method/{id}" ;
+        rr:class ex:Method
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:status ;
+
+        rr:objectMap [
+            rr:column "status" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# method_properties
+
+<#MethodPropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "method_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/methodProperty/{id}" ;
+        rr:class ex:MethodProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:category ;
+
+        rr:objectMap [
+            rr:column "category" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:placeholder ;
+
+        rr:objectMap [
+            rr:column "placeholder" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:label ;
+
+        rr:objectMap [
+            rr:column "label" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:fieldType ;
+
+        rr:objectMap [
+            rr:column "field_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:dataType ;
+
+        rr:objectMap [
+            rr:column "data_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isRequired ;
+
+        rr:objectMap [
+            rr:column "is_required" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:features ;
+
+        rr:objectMap [
+            rr:column "features" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:value ;
+
+        rr:objectMap [
+            rr:column "value" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# migrations
+
+<#MigrationsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "migrations"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/migration/{id}" ;
+        rr:class ex:Migration
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:migration ;
+
+        rr:objectMap [
+            rr:column "migration" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:batch ;
+
+        rr:objectMap [
+            rr:column "batch" ;
+            rr:datatype xsd:integer
+        ]
+    ] .
+
+# normables
+
+<#NormablesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "normables"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/normable/{id}" ;
+        rr:class ex:Normable
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:normableId ;
+
+        rr:objectMap [
+            rr:column "normable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:normableType ;
+
+        rr:objectMap [
+            rr:column "normable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# norms
+
+<#NormsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "norms"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/norm/{id}" ;
+        rr:class ex:Norm
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:results ;
+
+        rr:objectMap [
+            rr:column "results" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:method ;
+
+        rr:objectMap [
+            rr:column "method" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:data ;
+
+        rr:objectMap [
+            rr:column "data" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:measurementResults ;
+
+        rr:objectMap [
+            rr:column "measurement_results" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:additive ;
+
+        rr:objectMap [
+            rr:column "additive" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:specimen ;
+
+        rr:objectMap [
+            rr:column "specimen" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:processControlParameters ;
+
+        rr:objectMap [
+            rr:column "process_control_parameters" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:machineSpecimenParameters ;
+
+        rr:objectMap [
+            rr:column "machine_specimen_parameters" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testSpecimenParameters ;
+
+        rr:objectMap [
+            rr:column "test_specimen_parameters" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoTitlePage ;
+
+        rr:objectMap [
+            rr:column "iso_title_page" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoTableOfContents ;
+
+        rr:objectMap [
+            rr:column "iso_table_of_contents" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoPurposeAndScope ;
+
+        rr:objectMap [
+            rr:column "iso_purpose_and_scope" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoTerms ;
+
+        rr:objectMap [
+            rr:column "iso_terms" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoProcedureDesignation ;
+
+        rr:objectMap [
+            rr:column "iso_procedure_designation" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoApparatus ;
+
+        rr:objectMap [
+            rr:column "iso_apparatus" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoSpecimen ;
+
+        rr:objectMap [
+            rr:column "iso_specimen" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoImplementation ;
+
+        rr:objectMap [
+            rr:column "iso_implementation" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoEvaluation ;
+
+        rr:objectMap [
+            rr:column "iso_evaluation" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoTestReport ;
+
+        rr:objectMap [
+            rr:column "iso_test_report" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoLiteratureCitations ;
+
+        rr:objectMap [
+            rr:column "iso_literature_citations" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isoAppendix ;
+
+        rr:objectMap [
+            rr:column "iso_appendix" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmApparatus ;
+
+        rr:objectMap [
+            rr:column "astm_apparatus" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmReagentsAndMaterials ;
+
+        rr:objectMap [
+            rr:column "astm_reagents_and_materials" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmHazards ;
+
+        rr:objectMap [
+            rr:column "astm_hazards" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmSamplingTestSpecimensAndTestUnits ;
+
+        rr:objectMap [
+            rr:column "astm_sampling_test_specimens_and_test_units" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmPreparationOfApparatus ;
+
+        rr:objectMap [
+            rr:column "astm_preparation_of_apparatus" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmCalibrationAndStandardization ;
+
+        rr:objectMap [
+            rr:column "astm_calibration_and_standardization" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmConditioning ;
+
+        rr:objectMap [
+            rr:column "astm_conditioning" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmProcedure ;
+
+        rr:objectMap [
+            rr:column "astm_procedure" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmCalculationOrInterpretationOfResults ;
+
+        rr:objectMap [
+            rr:column "astm_calculation_or_interpretation_of_results" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmReport ;
+
+        rr:objectMap [
+            rr:column "astm_report" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmPrecisionAndBias ;
+
+        rr:objectMap [
+            rr:column "astm_precision_and_bias" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:astmMeasurementUncertainty ;
+
+        rr:objectMap [
+            rr:column "astm_measurement_uncertainty" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToStandard ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#StandardsTM> ;
+
+            rr:joinCondition [
+                rr:child "standard_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# norm_test_method
+
+<#NormTestMethodTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "norm_test_method"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/normTestMethod/{id}" ;
+        rr:class ex:NormTestMethod
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# password_reset_tokens
+
+<#PasswordResetTokensTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "password_reset_tokens"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/passwordResetToken/{email}" ;
+        rr:class ex:PasswordResetToken
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:token ;
+
+        rr:objectMap [
+            rr:column "token" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# personal_access_tokens
+
+<#PersonalAccessTokensTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "personal_access_tokens"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/personalAccessToken/{id}" ;
+        rr:class ex:PersonalAccessToken
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tokenableType ;
+
+        rr:objectMap [
+            rr:column "tokenable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tokenableId ;
+
+        rr:objectMap [
+            rr:column "tokenable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:token ;
+
+        rr:objectMap [
+            rr:column "token" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:abilities ;
+
+        rr:objectMap [
+            rr:column "abilities" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:lastUsedAt ;
+
+        rr:objectMap [
+            rr:column "last_used_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:expiresAt ;
+
+        rr:objectMap [
+            rr:column "expires_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# polymers
+
+<#PolymersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "polymers"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/polymer/{id}" ;
+        rr:class ex:Polymer
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# polymer_recipe
+
+<#PolymerRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "polymer_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/polymerRecipe/{id}" ;
+        rr:class ex:PolymerRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToPolymer ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#PolymersTM> ;
+
+            rr:joinCondition [
+                rr:child "polymer_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# processes
+
+<#ProcessesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "processes"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/process/{id}" ;
+        rr:class ex:Process
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:level ;
+
+        rr:objectMap [
+            rr:column "level" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProcess ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProcessesTM> ;
+
+            rr:joinCondition [
+                rr:child "parent_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# projects
+
+<#ProjectsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "projects"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/project/{id}" ;
+        rr:class ex:Project
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:number ;
+
+        rr:objectMap [
+            rr:column "number" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:title ;
+
+        rr:objectMap [
+            rr:column "title" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:acronym ;
+
+        rr:objectMap [
+            rr:column "acronym" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isActive ;
+
+        rr:objectMap [
+            rr:column "is_active" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# project_recipe
+
+<#ProjectRecipeTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "project_recipe"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/projectRecipe/{id}" ;
+        rr:class ex:ProjectRecipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProject ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProjectsTM> ;
+
+            rr:joinCondition [
+                rr:child "project_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# project_test_method
+
+<#ProjectTestMethodTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "project_test_method"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/projectTestMethod/{id}" ;
+        rr:class ex:ProjectTestMethod
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProject ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProjectsTM> ;
+
+            rr:joinCondition [
+                rr:child "project_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# project_users
+
+<#ProjectUsersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "project_users"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/projectUser/{id}" ;
+        rr:class ex:ProjectUser
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProject ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProjectsTM> ;
+
+            rr:joinCondition [
+                rr:child "project_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRole ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RolesTM> ;
+
+            rr:joinCondition [
+                rr:child "role_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipes
+
+<#RecipesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipes"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipe/{id}" ;
+        rr:class ex:Recipe
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:shortName ;
+
+        rr:objectMap [
+            rr:column "short_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:source ;
+
+        rr:objectMap [
+            rr:column "source" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:network ;
+
+        rr:objectMap [
+            rr:column "network" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:comment ;
+
+        rr:objectMap [
+            rr:column "comment" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:expiredAt ;
+
+        rr:objectMap [
+            rr:column "expired_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isProduct ;
+
+        rr:objectMap [
+            rr:column "is_product" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:fillLevel ;
+
+        rr:objectMap [
+            rr:column "fill_level" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToCustomer ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#CustomersTM> ;
+
+            rr:joinCondition [
+                rr:child "customer_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "master_product_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "master_recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterialSupply ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialSuppliesTM> ;
+
+            rr:joinCondition [
+                rr:child "material_supply_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "mixer_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "parent_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProcess ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProcessesTM> ;
+
+            rr:joinCondition [
+                rr:child "process_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProject ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProjectsTM> ;
+
+            rr:joinCondition [
+                rr:child "project_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_batch_properties
+
+<#RecipeBatchPropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_batch_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeBatchProperty/{id}" ;
+        rr:class ex:RecipeBatchProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:startedAt ;
+
+        rr:objectMap [
+            rr:column "started_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:cycleCounter ;
+
+        rr:objectMap [
+            rr:column "cycle_counter" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:cycleTotal ;
+
+        rr:objectMap [
+            rr:column "cycle_total" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:clampingForce ;
+
+        rr:objectMap [
+            rr:column "clamping_force" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj1EnergyJ ;
+
+        rr:objectMap [
+            rr:column "inj1_energy_j" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj1MaxInjectionPressureBar ;
+
+        rr:objectMap [
+            rr:column "inj1_max_injection_pressure_bar" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj1DosageVolumeIsCm3 ;
+
+        rr:objectMap [
+            rr:column "inj1_dosage_volume_is_cm3" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj2EnergyJ ;
+
+        rr:objectMap [
+            rr:column "inj2_energy_j" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj2MaxInjectionPressureBar ;
+
+        rr:objectMap [
+            rr:column "inj2_max_injection_pressure_bar" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:inj2DosageVolumeIsCm3 ;
+
+        rr:objectMap [
+            rr:column "inj2_dosage_volume_is_cm3" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:extruderMeanStaticPressureBar ;
+
+        rr:objectMap [
+            rr:column "extruder_mean_static_pressure_bar" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:extruderMeanExtrusionPressureBar ;
+
+        rr:objectMap [
+            rr:column "extruder_mean_extrusion_pressure_bar" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:extruderDosageTimeS ;
+
+        rr:objectMap [
+            rr:column "extruder_dosage_time_s" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:extruderExtrudierarbeit ;
+
+        rr:objectMap [
+            rr:column "extruder_extrudierarbeit" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:cycleTimeS ;
+
+        rr:objectMap [
+            rr:column "cycle_time_s" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:heatingTimeS ;
+
+        rr:objectMap [
+            rr:column "heating_time_s" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureThrottleChannel1C ;
+
+        rr:objectMap [
+            rr:column "temperature_throttle_channel_1_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureThrottleChannel2C ;
+
+        rr:objectMap [
+            rr:column "temperature_throttle_channel_2_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:demouldingTimeS ;
+
+        rr:objectMap [
+            rr:column "demoulding_time_s" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:handlingTimeS ;
+
+        rr:objectMap [
+            rr:column "handling_time_s" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureInjectionUnit11C ;
+
+        rr:objectMap [
+            rr:column "temperature_injection_unit_1_1_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureInjectionUnit12C ;
+
+        rr:objectMap [
+            rr:column "temperature_injection_unit_1_2_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tgSpritzeinheit13 ;
+
+        rr:objectMap [
+            rr:column "tg_spritzeinheit_1_3" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tgSpritzeinheit14 ;
+
+        rr:objectMap [
+            rr:column "tg_spritzeinheit_1_4" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureUpperMountingPlateInsideC ;
+
+        rr:objectMap [
+            rr:column "temperature_upper_mounting_plate_inside_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureUpperMountingPlateOutsideC ;
+
+        rr:objectMap [
+            rr:column "temperature_upper_mounting_plate_outside_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mouldHeating1C ;
+
+        rr:objectMap [
+            rr:column "mould_heating_1_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mouldHeating2C ;
+
+        rr:objectMap [
+            rr:column "mould_heating_2_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mouldHeating3C ;
+
+        rr:objectMap [
+            rr:column "mould_heating_3_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mouldHeating4C ;
+
+        rr:objectMap [
+            rr:column "mould_heating_4_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureLowerMountingPlateInsideC ;
+
+        rr:objectMap [
+            rr:column "temperature_lower_mounting_plate_inside_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureLowerMountingPlateOutsideC ;
+
+        rr:objectMap [
+            rr:column "temperature_lower_mounting_plate_outside_c" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_features
+
+<#RecipeFeaturesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_features"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeFeature/{id}" ;
+        rr:class ex:RecipeFeature
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# recipe_fillers
+
+<#RecipeFillersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_fillers"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeFiller/{id}" ;
+        rr:class ex:RecipeFiller
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# recipe_material
+
+<#RecipeMaterialTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_material"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeMaterial/{id}" ;
+        rr:class ex:RecipeMaterial
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phr ;
+
+        rr:objectMap [
+            rr:column "phr" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:order ;
+
+        rr:objectMap [
+            rr:column "order" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToSupplier ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#SuppliersTM> ;
+
+            rr:joinCondition [
+                rr:child "supplier_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_properties
+
+<#RecipePropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeProperty/{id}" ;
+        rr:class ex:RecipeProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:min ;
+
+        rr:objectMap [
+            rr:column "min" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:max ;
+
+        rr:objectMap [
+            rr:column "max" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:condition ;
+
+        rr:objectMap [
+            rr:column "condition" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:methode ;
+
+        rr:objectMap [
+            rr:column "methode" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:chemicalComposition ;
+
+        rr:objectMap [
+            rr:column "chemical_composition" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_property_norm
+
+<#RecipePropertyNormTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_property_norm"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipePropertyNorm/{id}" ;
+        rr:class ex:RecipePropertyNorm
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipeProperty ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipePropertiesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_property_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_recipe_feature
+
+<#RecipeRecipeFeatureTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_recipe_feature"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeRecipeFeature/{id}" ;
+        rr:class ex:RecipeRecipeFeature
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipeFeature ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipeFeaturesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_feature_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_recipe_filler
+
+<#RecipeRecipeFillerTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_recipe_filler"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeRecipeFiller/{id}" ;
+        rr:class ex:RecipeRecipeFiller
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipeFiller ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipeFillersTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_filler_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_steps
+
+<#RecipeStepsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_steps"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeStep/{id}" ;
+        rr:class ex:RecipeStep
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:order ;
+
+        rr:objectMap [
+            rr:column "order" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:materialValue ;
+
+        rr:objectMap [
+            rr:column "material_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:materialUnit ;
+
+        rr:objectMap [
+            rr:column "material_unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:duration ;
+
+        rr:objectMap [
+            rr:column "duration" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:start ;
+
+        rr:objectMap [
+            rr:column "start" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToProcess ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#ProcessesTM> ;
+
+            rr:joinCondition [
+                rr:child "process_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipeStepType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipeStepTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_step_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# recipe_step_types
+
+<#RecipeStepTypesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "recipe_step_types"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/recipeStepType/{id}" ;
+        rr:class ex:RecipeStepType
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# roles
+
+<#RolesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "roles"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/role/{id}" ;
+        rr:class ex:Role
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isForProject ;
+
+        rr:objectMap [
+            rr:column "is_for_project" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# standards
+
+<#StandardsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "standards"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/standard/{id}" ;
+        rr:class ex:Standard
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# storage_locations
+
+<#StorageLocationsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "storage_locations"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/storageLocation/{id}" ;
+        rr:class ex:StorageLocation
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:storageLocationalId ;
+
+        rr:objectMap [
+            rr:column "storage_locational_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:storageLocationalType ;
+
+        rr:objectMap [
+            rr:column "storage_locational_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# suppliers
+
+<#SuppliersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "suppliers"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/supplier/{id}" ;
+        rr:class ex:Supplier
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:company ;
+
+        rr:objectMap [
+            rr:column "company" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyAddress ;
+
+        rr:objectMap [
+            rr:column "company_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyPostalCode ;
+
+        rr:objectMap [
+            rr:column "company_postal_code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyCity ;
+
+        rr:objectMap [
+            rr:column "company_city" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:companyCountry ;
+
+        rr:objectMap [
+            rr:column "company_country" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactFirstName ;
+
+        rr:objectMap [
+            rr:column "contact_first_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactLastName ;
+
+        rr:objectMap [
+            rr:column "contact_last_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactTitle ;
+
+        rr:objectMap [
+            rr:column "contact_title" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactEmail ;
+
+        rr:objectMap [
+            rr:column "contact_email" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactPhone ;
+
+        rr:objectMap [
+            rr:column "contact_phone" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactAddress ;
+
+        rr:objectMap [
+            rr:column "contact_address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactPostalCode ;
+
+        rr:objectMap [
+            rr:column "contact_postal_code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactCity ;
+
+        rr:objectMap [
+            rr:column "contact_city" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:contactCountry ;
+
+        rr:objectMap [
+            rr:column "contact_country" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:isUseSameAddressForContact ;
+
+        rr:objectMap [
+            rr:column "is_use_same_address_for_contact" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# symbols
+
+<#SymbolsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "symbols"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/symbol/{id}" ;
+        rr:class ex:Symbol
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:pictogram ;
+
+        rr:objectMap [
+            rr:column "pictogram" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# technicianables
+
+<#TechnicianablesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "technicianables"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/technicianable/{id}" ;
+        rr:class ex:Technicianable
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:technicianableType ;
+
+        rr:objectMap [
+            rr:column "technicianable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:technicianableId ;
+
+        rr:objectMap [
+            rr:column "technicianable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "user_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# test_methods
+
+<#TestMethodsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "test_methods"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/testMethod/{id}" ;
+        rr:class ex:TestMethod
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:assignTo ;
+
+        rr:objectMap [
+            rr:column "assign_to"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:measuringSurfaceWidth ;
+
+        rr:objectMap [
+            rr:column "measuring_surface_width" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:measuringSurfaceDepth ;
+
+        rr:objectMap [
+            rr:column "measuring_surface_depth" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:step ;
+
+        rr:objectMap [
+            rr:column "step" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:rangeFrom ;
+
+        rr:objectMap [
+            rr:column "range_from" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:rangeTo ;
+
+        rr:objectMap [
+            rr:column "range_to" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:measuringUnit ;
+
+        rr:objectMap [
+            rr:column "measuring_unit"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperature ;
+
+        rr:objectMap [
+            rr:column "temperature" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:volumePycnometer ;
+
+        rr:objectMap [
+            rr:column "volume_pycnometer" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:emptyWeightPycnometer ;
+
+        rr:objectMap [
+            rr:column "empty_weight_pycnometer" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:weightPycnometerIsopropanol ;
+
+        rr:objectMap [
+            rr:column "weight_pycnometer_isopropanol" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:densityIsopropanol ;
+
+        rr:objectMap [
+            rr:column "density_isopropanol" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:meanValueDensity ;
+
+        rr:objectMap [
+            rr:column "mean_value_density" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:standardDeviation ;
+
+        rr:objectMap [
+            rr:column "standard_deviation" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:meanValue ;
+
+        rr:objectMap [
+            rr:column "mean_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testDuration ;
+
+        rr:objectMap [
+            rr:column "test_duration" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:materialThickness ;
+
+        rr:objectMap [
+            rr:column "material_thickness" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:numberOfLayers ;
+
+        rr:objectMap [
+            rr:column "number_of_layers" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:midValue ;
+
+        rr:objectMap [
+            rr:column "mid_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:formRebound ;
+
+        rr:objectMap [
+            rr:column "form_rebound" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:thickness ;
+
+        rr:objectMap [
+            rr:column "thickness"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:thicknessTable ;
+
+        rr:objectMap [
+            rr:column "thickness_table"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:evaluationMethod ;
+
+        rr:objectMap [
+            rr:column "evaluation_method"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:carbonBlackShare ;
+
+        rr:objectMap [
+            rr:column "carbon_black_share" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:oanTopography ;
+
+        rr:objectMap [
+            rr:column "oan_topography" ;
+            rr:datatype xsd:boolean
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:medaliafactor ;
+
+        rr:objectMap [
+            rr:column "medaliafactor" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:dispertionMedalia ;
+
+        rr:objectMap [
+            rr:column "dispertion_medalia" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:dispertionOverArea ;
+
+        rr:objectMap [
+            rr:column "dispertion_over_area" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:changesNorm ;
+
+        rr:objectMap [
+            rr:column "changes_norm" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testSpecimen ;
+
+        rr:objectMap [
+            rr:column "test_specimen"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:layered ;
+
+        rr:objectMap [
+            rr:column "layered"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:methodCompressionSet ;
+
+        rr:objectMap [
+            rr:column "method_compression_set"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:lubricant ;
+
+        rr:objectMap [
+            rr:column "lubricant"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:duration ;
+
+        rr:objectMap [
+            rr:column "duration" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:sollverMung ;
+
+        rr:objectMap [
+            rr:column "sollver_mung" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testTemperature ;
+
+        rr:objectMap [
+            rr:column "test_temperature" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:ambientTemperature ;
+
+        rr:objectMap [
+            rr:column "ambient_temperature" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testStartAt ;
+
+        rr:objectMap [
+            rr:column "test_start_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testEndAt ;
+
+        rr:objectMap [
+            rr:column "test_end_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:reibweg ;
+
+        rr:objectMap [
+            rr:column "reibweg" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:trackingForce ;
+
+        rr:objectMap [
+            rr:column "tracking_force" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:bamRefValue ;
+
+        rr:objectMap [
+            rr:column "bam_ref_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:scorchViscosityTs5 ;
+
+        rr:objectMap [
+            rr:column "scorch_viscosity_ts_5" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:scorchViscosityTs35 ;
+
+        rr:objectMap [
+            rr:column "scorch_viscosity_ts_35" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:hardnessMethod ;
+
+        rr:objectMap [
+            rr:column "hardness_method"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:resultName ;
+
+        rr:objectMap [
+            rr:column "result_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:timeMeasurementAt ;
+
+        rr:objectMap [
+            rr:column "time_measurement_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:creator ;
+
+        rr:objectMap [
+            rr:column "creator" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:averageTemperature ;
+
+        rr:objectMap [
+            rr:column "average_temperature" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeSweep ;
+
+        rr:objectMap [
+            rr:column "amplitude_sweep" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeLaos ;
+
+        rr:objectMap [
+            rr:column "amplitude_laos" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:frequencyFrom ;
+
+        rr:objectMap [
+            rr:column "frequency_from" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:frequencyTo ;
+
+        rr:objectMap [
+            rr:column "frequency_to" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeFrom ;
+
+        rr:objectMap [
+            rr:column "amplitude_from" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeTo ;
+
+        rr:objectMap [
+            rr:column "amplitude_to" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaZeroOne ;
+
+        rr:objectMap [
+            rr:column "delta_zero_one" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaZeroZeroOne ;
+
+        rr:objectMap [
+            rr:column "delta_zero_zero_one" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaDelta ;
+
+        rr:objectMap [
+            rr:column "delta_delta" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:sweepColumns ;
+
+        rr:objectMap [
+            rr:column "sweep_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:sweepChartColumns ;
+
+        rr:objectMap [
+            rr:column "sweep_chart_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:frequency ;
+
+        rr:objectMap [
+            rr:column "frequency" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:dateAmplitudeAt ;
+
+        rr:objectMap [
+            rr:column "date_amplitude_at" ;
+            rr:datatype xsd:date
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaG ;
+
+        rr:objectMap [
+            rr:column "delta_g" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeSweepColumns ;
+
+        rr:objectMap [
+            rr:column "amplitude_sweep_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeSweepChartColumns ;
+
+        rr:objectMap [
+            rr:column "amplitude_sweep_chart_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:frequencyVolcanic ;
+
+        rr:objectMap [
+            rr:column "frequency_volcanic" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:amplitudeVolcanic ;
+
+        rr:objectMap [
+            rr:column "amplitude_volcanic" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tNinety ;
+
+        rr:objectMap [
+            rr:column "t_ninety" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tTen ;
+
+        rr:objectMap [
+            rr:column "t_ten" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:volcanicColumns ;
+
+        rr:objectMap [
+            rr:column "volcanic_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:volcanicChartColumns ;
+
+        rr:objectMap [
+            rr:column "volcanic_chart_columns" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:preTension ;
+
+        rr:objectMap [
+            rr:column "pre_tension" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:speedTensile ;
+
+        rr:objectMap [
+            rr:column "speed_tensile" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:viscosityTest ;
+
+        rr:objectMap [
+            rr:column "viscosity_test" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:viscosityUnit ;
+
+        rr:objectMap [
+            rr:column "viscosity_unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:viscosityType ;
+
+        rr:objectMap [
+            rr:column "viscosity_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:viscosityValue ;
+
+        rr:objectMap [
+            rr:column "viscosity_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:viscosityDescription ;
+
+        rr:objectMap [
+            rr:column "viscosity_description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:rpm ;
+
+        rr:objectMap [
+            rr:column "rpm" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:blackShare ;
+
+        rr:objectMap [
+            rr:column "black_share" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:defectsPcs ;
+
+        rr:objectMap [
+            rr:column "defects_pcs" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:sampleSurface ;
+
+        rr:objectMap [
+            rr:column "sample_surface" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:surfacePercentage ;
+
+        rr:objectMap [
+            rr:column "surface_percentage" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:defectsSurface ;
+
+        rr:objectMap [
+            rr:column "defects_surface" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:scorchTimeTs5 ;
+
+        rr:objectMap [
+            rr:column "scorch_time_ts_5" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:scorchTimeTs35 ;
+
+        rr:objectMap [
+            rr:column "scorch_time_ts_35" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:timeConverter ;
+
+        rr:objectMap [
+            rr:column "time_converter"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tanDeltaFrequencyMin ;
+
+        rr:objectMap [
+            rr:column "tan_delta_frequency_min" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:tanDeltaFrequencyMax ;
+
+        rr:objectMap [
+            rr:column "tan_delta_frequency_max" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaGKpa ;
+
+        rr:objectMap [
+            rr:column "delta_g_kpa" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:testedAtStep ;
+
+        rr:objectMap [
+            rr:column "tested_at_step" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "machine_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMaterial ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MaterialsTM> ;
+
+            rr:joinCondition [
+                rr:child "material_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToNorm ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#NormsTM> ;
+
+            rr:joinCondition [
+                rr:child "norm_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToRecipe ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#RecipesTM> ;
+
+            rr:joinCondition [
+                rr:child "recipe_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethodType ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodTypesTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_type_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToMachine ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#MachinesTM> ;
+
+            rr:joinCondition [
+                rr:child "tool_compression_set_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# test_method_properties
+
+<#TestMethodPropertiesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "test_method_properties"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/testMethodProperty/{id}" ;
+        rr:class ex:TestMethodProperty
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:max ;
+
+        rr:objectMap [
+            rr:column "max" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:min ;
+
+        rr:objectMap [
+            rr:column "min" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:unit ;
+
+        rr:objectMap [
+            rr:column "unit" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:valueRebound ;
+
+        rr:objectMap [
+            rr:column "value_rebound" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:value ;
+
+        rr:objectMap [
+            rr:column "value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:startingHeight ;
+
+        rr:objectMap [
+            rr:column "starting_height" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:spacerHeight ;
+
+        rr:objectMap [
+            rr:column "spacer_height" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:thicknessAfterRecovery ;
+
+        rr:objectMap [
+            rr:column "thickness_after_recovery" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:compressionSetDvr ;
+
+        rr:objectMap [
+            rr:column "compression_set_dvr" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:startingWeight ;
+
+        rr:objectMap [
+            rr:column "starting_weight" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:endWeight ;
+
+        rr:objectMap [
+            rr:column "end_weight" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:delta ;
+
+        rr:objectMap [
+            rr:column "delta" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:comparisonDefaultMaterialStartingWeight ;
+
+        rr:objectMap [
+            rr:column "comparison_default_material_starting_weight" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:cdmEndWeight ;
+
+        rr:objectMap [
+            rr:column "cdm_end_weight" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deltaCdm ;
+
+        rr:objectMap [
+            rr:column "delta_cdm" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:relativeLossVolume ;
+
+        rr:objectMap [
+            rr:column "relative_loss_volume" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:abrasionResistanceIndex ;
+
+        rr:objectMap [
+            rr:column "abrasion_resistance_index" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:temperatureValue ;
+
+        rr:objectMap [
+            rr:column "temperature_value" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:garveyEdge ;
+
+        rr:objectMap [
+            rr:column "garvey_edge" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:garveySurface ;
+
+        rr:objectMap [
+            rr:column "garvey_surface" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:garveySwellingPorosity ;
+
+        rr:objectMap [
+            rr:column "garvey_swelling_porosity" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:garveyCorners ;
+
+        rr:objectMap [
+            rr:column "garvey_corners" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:massArg ;
+
+        rr:objectMap [
+            rr:column "mass_arg" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:massIsopropanol ;
+
+        rr:objectMap [
+            rr:column "mass_isopropanol" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:density ;
+
+        rr:objectMap [
+            rr:column "density" ;
+            rr:datatype xsd:double
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToTestMethod ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#TestMethodsTM> ;
+
+            rr:joinCondition [
+                rr:child "test_method_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# test_method_types
+
+<#TestMethodTypesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "test_method_types"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/testMethodType/{id}" ;
+        rr:class ex:TestMethodType
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .
+
+# translations
+
+<#TranslationsTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "translations"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/translation/{id}" ;
+        rr:class ex:Translation
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:title ;
+
+        rr:objectMap [
+            rr:column "title" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:field ;
+
+        rr:objectMap [
+            rr:column "field" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:description ;
+
+        rr:objectMap [
+            rr:column "description" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:content ;
+
+        rr:objectMap [
+            rr:column "content" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:translatableType ;
+
+        rr:objectMap [
+            rr:column "translatable_type" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:translatableId ;
+
+        rr:objectMap [
+            rr:column "translatable_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToLang ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#LangsTM> ;
+
+            rr:joinCondition [
+                rr:child "lang_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# users
+
+<#UsersTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "users"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/user/{id}" ;
+        rr:class ex:User
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:firstName ;
+
+        rr:objectMap [
+            rr:column "first_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:lastName ;
+
+        rr:objectMap [
+            rr:column "last_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:nickName ;
+
+        rr:objectMap [
+            rr:column "nick_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:gender ;
+
+        rr:objectMap [
+            rr:column "gender" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:email ;
+
+        rr:objectMap [
+            rr:column "email" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phone ;
+
+        rr:objectMap [
+            rr:column "phone" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:title ;
+
+        rr:objectMap [
+            rr:column "title" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:mobile ;
+
+        rr:objectMap [
+            rr:column "mobile" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:address ;
+
+        rr:objectMap [
+            rr:column "address" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:postalCode ;
+
+        rr:objectMap [
+            rr:column "postal_code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:cityName ;
+
+        rr:objectMap [
+            rr:column "city_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:countryName ;
+
+        rr:objectMap [
+            rr:column "country_name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:emailVerifiedAt ;
+
+        rr:objectMap [
+            rr:column "email_verified_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:password ;
+
+        rr:objectMap [
+            rr:column "password" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:roleId ;
+
+        rr:objectMap [
+            rr:column "role_id" ;
+            rr:datatype xsd:integer
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:rememberToken ;
+
+        rr:objectMap [
+            rr:column "remember_token" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToCity ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#CitiesTM> ;
+
+            rr:joinCondition [
+                rr:child "city_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToCountry ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#CountriesTM> ;
+
+            rr:joinCondition [
+                rr:child "country_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUser ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UsersTM> ;
+
+            rr:joinCondition [
+                rr:child "created_by_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:belongsToUserStatus ;
+
+        rr:objectMap [
+            rr:parentTriplesMap <#UserStatusesTM> ;
+
+            rr:joinCondition [
+                rr:child "user_status_id" ;
+                rr:parent "id"
+            ]
+        ]
+    ] .
+
+# user_statuses
+
+<#UserStatusesTM>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [
+        rr:tableName "user_statuses"
+    ] ;
+
+    rr:subjectMap [
+        rr:template "https://tib.eu/insuka/userStatus/{id}" ;
+        rr:class ex:UserStatus
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:name ;
+
+        rr:objectMap [
+            rr:column "name" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:code ;
+
+        rr:objectMap [
+            rr:column "code" ;
+            rr:datatype xsd:string
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:deletedAt ;
+
+        rr:objectMap [
+            rr:column "deleted_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdAt ;
+
+        rr:objectMap [
+            rr:column "created_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:updatedAt ;
+
+        rr:objectMap [
+            rr:column "updated_at" ;
+            rr:datatype xsd:dateTime
+        ]
+    ] .

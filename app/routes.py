@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, Response, current_app,jso
 import os
 import time
 from werkzeug.utils import secure_filename
-from .utils import preprocessSSBRRequestsFile, upload_to_graphdb, run_sparql_query, run_rmlmapper
+from .utils import preprocessSSBRRequestsFile, upload_to_graphdb, run_sparql_query, run_rmlmapper, run_r2rml_pipeline
 import csv
 import io
 #from bs4 import BeautifulSoup
@@ -691,3 +691,41 @@ def get_object_graph(object_name):
     except Exception as e:
         print(f"Graph fetch error: {e}")
         return jsonify({"error": str(e)}), 500
+    
+
+@bp.route(
+    "/run-r2rml-pipeline",
+    methods=["POST"]
+)
+def run_r2rml_pipeline_route():
+    """
+    Runs the complete automatic R2RML pipeline.
+    """
+
+    try:
+        rdf_file = run_r2rml_pipeline()
+
+        return jsonify(
+            {
+                "status": "success",
+                "message": (
+                    "R2RML mapping generated, "
+                    "RDF generated, and RDF uploaded "
+                    "to GraphDB successfully."
+                ),
+                "rdf_file": rdf_file
+            }
+        ), 200
+
+    except Exception as error:
+
+        current_app.logger.exception(
+            "The automatic R2RML pipeline failed."
+        )
+
+        return jsonify(
+            {
+                "status": "error",
+                "message": str(error)
+            }
+        ), 500

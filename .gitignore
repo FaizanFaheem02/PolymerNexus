@@ -3,3 +3,12 @@ tools/rmlmapper.jar
 
 # logs
 *.log
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+
+# Generated RDF data
+output/output_graphs/generated_rdf.ttl
