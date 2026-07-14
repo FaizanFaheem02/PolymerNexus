@@ -135,10 +135,7 @@ def singularize(name):
 
 
 def table_to_class(table_name):
-    """
-    method_properties -> MethodProperty
-    methods           -> Method
-    """
+
     words = table_name.split("_")
 
     singular_words = [
@@ -153,20 +150,14 @@ def table_to_class(table_name):
 
 
 def table_to_path(table_name):
-    """
-    method_properties -> methodProperty
-    test_methods      -> testMethod
-    """
+    
     class_name = table_to_class(table_name)
 
     return class_name[0].lower() + class_name[1:]
 
 
 def column_to_predicate(column_name):
-    """
-    created_at  -> createdAt
-    is_required -> isRequired
-    """
+   
     words = column_name.split("_")
 
     return (
@@ -179,9 +170,6 @@ def column_to_predicate(column_name):
 
 
 def mysql_to_xsd(data_type, column_type):
-    """
-    Convert MySQL datatypes to RDF/XSD datatypes.
-    """
 
     data_type = str(data_type).lower()
     column_type = str(column_type).lower()
@@ -222,8 +210,7 @@ def mysql_to_xsd(data_type, column_type):
     return datatype_mapping.get(data_type)
 
 
-# Create a dictionary:
-# table name -> list of primary-key columns
+# Create a dictionary: table name -> list of primary-key columns
 primary_key_map = {}
 
 for _, row in primary_keys.iterrows():
