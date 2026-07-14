@@ -4,7 +4,7 @@ import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from the project-root .env file
+# Load environment variables from the .env file
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
